@@ -1,26 +1,41 @@
 #MainBackground {
     background-color: #7BB2D9;
     height: 100vh;
-    position: relative; /* Add this to make sure z-index works */
+    position: relative; 
+    overflow: hidden;
   }
   
   .background-svg1 {
     min-height: 100vh;
-    background: url(https://firebasestorage.googleapis.com/v0/b/wishlingo-69330.appspot.com/o/SVGs%2Fwave1.svg?alt=media&token=61b62a96-5e37-45d6-9b73-d4141cf5d518) center bottom no-repeat;
+    background: url(https://firebasestorage.googleapis.com/v0/b/wishlingode.appspot.com/o/SVGs%2Fwave1.svg?alt=media&token=1fd9eead-b02c-4fb7-961d-11a64bfe2a18) center bottom no-repeat;
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
-    z-index: 1; /* Adjust the z-index to be above #MainBackground */
+    z-index: 1; 
+    animation: fadeInUp 2s 0s forwards; 
+
   }
   
   .background-svg2 {
     min-height: 100vh;
-    background: url(https://firebasestorage.googleapis.com/v0/b/wishlingo-69330.appspot.com/o/SVGs%2Fwave2.svg?alt=media&token=0944cba0-ffd1-4b3f-8d55-63b519f31238) center bottom no-repeat;
+    background: url(https://firebasestorage.googleapis.com/v0/b/wishlingode.appspot.com/o/SVGs%2Fwave2.svg?alt=media&token=69c53f02-90fc-47c3-98e7-2511764d92d3) center bottom no-repeat;
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
-    z-index: 0; /* Place this background slightly below the first SVG */
+    z-index: 0; 
+    animation: fadeInUp 4s 0s forwards; 
+
   }
   
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(10%);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
