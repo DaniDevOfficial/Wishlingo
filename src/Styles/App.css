@@ -1,0 +1,26 @@
+#MainBackground {
+    background-color: #7BB2D9;
+    height: 100vh;
+    position: relative; /* Add this to make sure z-index works */
+  }
+  
+  .background-svg1 {
+    min-height: 100vh;
+    background: url(https://firebasestorage.googleapis.com/v0/b/wishlingo-69330.appspot.com/o/SVGs%2Fwave1.svg?alt=media&token=61b62a96-5e37-45d6-9b73-d4141cf5d518) center bottom no-repeat;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1; /* Adjust the z-index to be above #MainBackground */
+  }
+  
+  .background-svg2 {
+    min-height: 100vh;
+    background: url(https://firebasestorage.googleapis.com/v0/b/wishlingo-69330.appspot.com/o/SVGs%2Fwave2.svg?alt=media&token=0944cba0-ffd1-4b3f-8d55-63b519f31238) center bottom no-repeat;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 0; /* Place this background slightly below the first SVG */
+  }
+  
