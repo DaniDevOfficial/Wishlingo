@@ -108,5 +108,27 @@
       "hints": ["It's the English word for 'Hallöchen'."],
       "topic": "Begrüßungen",
       "positionInTopic": 10
+    },
+    {
+      "id": "test",
+      "knowLang": "de",
+      "learnLang": "en",
+      "sentence": "Howdy!",
+      "translation": "Hallöchen!",
+      "missingWord": "Howdy",
+      "hints": ["It's the English word for 'Hallöchen'."],
+      "topic": "test1",
+      "positionInTopic": 1
+    },
+    {
+      "id": "test",
+      "knowLang": "de",
+      "learnLang": "en",
+      "sentence": "Howdy!",
+      "translation": "Hallöchen!",
+      "missingWord": "Howdy",
+      "hints": ["It's the English word for 'Hallöchen'."],
+      "topic": "test2",
+      "positionInTopic": 1
     }
   ]

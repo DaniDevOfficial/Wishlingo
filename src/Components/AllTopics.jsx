@@ -1,15 +1,31 @@
 import tasksData from './Tasks/tasks.json';
+import { useLocation, Link } from 'react-router-dom';
 
 
+export function Alltopics() {
 
-export function Alltopics () {
-    const filteredTasks = tasksData.filter(task => task.knowLang === "de" && task.learnLang === "en");
-    console.log(filteredTasks);
+    const location = useLocation();
+    const currentPath = location.pathname;
+    const known = currentPath.substring(1, 3)
+    const learn = currentPath.substring(4, 6)
 
-    return(
+    const filteredTasks = tasksData.filter(task => task.knowLang === known && task.learnLang === learn);
+
+    const uniqueTopicsSet = new Set();
+    filteredTasks.forEach(item => {
+        uniqueTopicsSet.add(item.topic);
+    });
+
+    const uniqueTopicsArray = Array.from(uniqueTopicsSet);
+
+    return (
         <>
-            
-        
+            <ul>
+                {uniqueTopicsArray.map((topic, index) => (
+                    <li key={index}>{topic}</li>
+                ))}
+            </ul>
+
         </>
     )
 }

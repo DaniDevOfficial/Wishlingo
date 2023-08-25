@@ -17,7 +17,7 @@ export default function WhatWant() {
         <div>
       {Object.entries(filteredLangs).map(([key, value], index) => {
         return (
-          <Link key={index} to={`/${cutPath}/${value}`}>
+          <Link key={index} to={`${value}`}>
             <button onClick={() => setLearning(value)}>
             <img src={flagImages[key]} alt={key} />
             </button>
