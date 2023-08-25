@@ -1,10 +1,15 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-const langs = {
-  german: 'ge',
-  english: 'en',
-  french: 'fr',
+export const langs = {
+  "german": 'de',
+  "english": 'en',
+  "french": 'fr',
+};
+export const flagImages = {
+  german: require(`./Flags/german.png`),
+  english: require(`./Flags/english.png`),
+  french: require(`./Flags/french.png`),
 };
 
 export default function WhatKnow() {
@@ -16,7 +21,7 @@ export default function WhatKnow() {
         return (
           <Link key={index} to={`/${value}`}>
             <button onClick={() => setSpeaking(value)}>
-              {key}
+            <img src={flagImages[key]} alt={key} />
             </button>
           </Link>
         );

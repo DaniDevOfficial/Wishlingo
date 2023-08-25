@@ -9,6 +9,8 @@ export function Wrapper ()  {
       <Routes>
         <Route path="/" element={<WhatKnow />} />
         <Route path="/en" element={<WhatWant />} />
+        <Route path="/de" element={<WhatWant />} />
+        <Route path="/fr" element={<WhatWant />} />
 
       </Routes>
     </Router>
