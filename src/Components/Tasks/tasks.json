@@ -1,0 +1,112 @@
+[
+    {
+        "id": "task1",
+        "knowLang": "de",
+        "learnLang": "en",
+        "sentence": "Hello, how _ _ _ you?",
+        "translation": "Hallo, wie geht es dir?",
+        "missingWord": "are",
+        "hints": ["It's the English word for 'geht'."],
+        "topic": "Begrüßungen",
+        "positionInTopic": 1
+      },
+      {
+        "id": "task2",
+        "knowLang": "de",
+        "learnLang": "en",
+        "sentence": "Good morning!",
+        "translation": "Guten Morgen!",
+        "missingWord": "morning",
+        "hints": ["It's the English word for 'morning'."],
+        "topic": "Begrüßungen",
+        "positionInTopic": 2
+      },
+      {
+        "id": "task3",
+        "knowLang": "de",
+        "learnLang": "en",
+        "sentence": "Nice to meet you.",
+        "translation": "Schön, dich kennenzulernen.",
+        "missingWord": "meet",
+        "hints": ["It's the English word for 'kennenzulernen'."],
+        "topic": "Begrüßungen",
+        "positionInTopic": 3
+      },
+      {
+        "id": "task4",
+        "knowLang": "de",
+        "learnLang": "en",
+        "sentence": "Hi, what's your name?",
+        "translation": "Hallo, wie heißt du?",
+        "missingWord": "name",
+        "hints": ["It's the English word for 'heißt'."],
+        "topic": "Begrüßungen",
+        "positionInTopic": 4
+      },
+      {
+        "id": "task5",
+        "knowLang": "de",
+        "learnLang": "en",
+        "sentence": "Good evening!",
+        "translation": "Guten Abend!",
+        "missingWord": "evening",
+        "hints": ["It's the English word for 'Abend'."],
+        "topic": "Begrüßungen",
+        "positionInTopic": 5
+      },
+      {
+        "id": "task6",
+        "knowLang": "de",
+        "learnLang": "en",
+        "sentence": "Welcome!",
+        "translation": "Willkommen!",
+        "missingWord": "Welcome",
+        "hints": ["It's the English word for 'Willkommen'."],
+        "topic": "Begrüßungen",
+        "positionInTopic": 6
+      },
+      {
+        "id": "task7",
+        "knowLang": "de",
+        "learnLang": "en",
+        "sentence": "How's it going?",
+        "translation": "Wie läuft's?",
+        "missingWord": "it",
+        "hints": ["It's the English word for 'es'."],
+        "topic": "Begrüßungen",
+        "positionInTopic": 7
+      },
+    {
+      "id": "task8",
+      "knowLang": "de",
+      "learnLang": "en",
+      "sentence": "Long time no see!",
+      "translation": "Lange nicht gesehen!",
+      "missingWord": "Long",
+      "hints": ["It's the English word for 'Lange'."],
+      "topic": "Begrüßungen",
+      "positionInTopic": 8
+    },
+    {
+      "id": "task9",
+      "knowLang": "de",
+      "learnLang": "en",
+      "sentence": "See you _ _ _ _ _!",
+      "translation": "Bis später!",
+      "missingWord": "later",
+      "hints": ["It's the English word for 'dich'."],
+      "topic": "Begrüßungen",
+      "positionInTopic": 9
+    },
+    {
+      "id": "task10",
+      "knowLang": "de",
+      "learnLang": "en",
+      "sentence": "Howdy!",
+      "translation": "Hallöchen!",
+      "missingWord": "Howdy",
+      "hints": ["It's the English word for 'Hallöchen'."],
+      "topic": "Begrüßungen",
+      "positionInTopic": 10
+    }
+  ]
