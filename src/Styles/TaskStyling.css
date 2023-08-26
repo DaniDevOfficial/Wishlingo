@@ -1,0 +1,24 @@
+:root {
+	--missingwordLength: 3;
+  }
+  
+  #answerInput {
+	margin: 1em auto;
+	border: none;
+	margin-left: 10px;
+	margin-right: 10px;
+	width: calc(var(--missingwordLength) * (1ch + 0.3ch)); 
+	background: repeating-linear-gradient(
+	  90deg,
+	  dimgrey 0, dimgrey 1ch,
+	  transparent 0, transparent calc(1ch + 0.3ch)
+	) 0 calc(100% - 2px) / calc(var(--missingwordLength) * (1ch + 0.3ch) - 0.3ch) 2px no-repeat;
+	font: 4ch droid sans mono, consolas, monospace;
+	letter-spacing: 0.3ch;
+  }
+  
+  #answerInput:focus {
+	outline: none;
+	color: dodgerblue;
+  }
+  

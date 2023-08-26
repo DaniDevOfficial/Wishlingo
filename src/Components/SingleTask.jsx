@@ -1,7 +1,7 @@
 import tasksData from './Tasks/tasks.json';
 import { useLocation, Link } from 'react-router-dom';
 import React, { useState, useEffect } from 'react';
-
+import '../Styles/TaskStyling.css'
 export function SingleTask() {
   const location = useLocation();
   const currentPath = location.pathname;
@@ -72,6 +72,8 @@ export function SingleTask() {
   const sentencePart2 = task.sentencePart2;
   const translatedSentence = task.translation;
   const missingWord = task.missingWord;
+  const missingWordLength = missingWord.length
+  console.log(missingWordLength)
 
 
   const goToNextTask = () => {
@@ -120,8 +122,15 @@ export function SingleTask() {
     ) : (
       <>
         <p>
-          {sentencePart1} 
-          <input type="text" value={userInput} onChange={handleInputChange} />
+          {sentencePart1}
+          <input
+            type="text"
+            value={userInput}
+            maxLength={missingWordLength}
+            id="answerInput"
+            onChange={handleInputChange}
+            style={{ "--missingwordLength": missingWordLength }}
+          />
           {sentencePart2}
 
         </p>
