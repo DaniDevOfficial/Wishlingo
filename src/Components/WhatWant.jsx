@@ -1,6 +1,8 @@
 import { useState, useSyncExternalStore } from 'react';
 import { useLocation, Link } from 'react-router-dom';
 import { langs, flagImages } from './WhatKnow';
+
+import '../Styles/Selector.css'
 export default function WhatWant() {
 
     const [learning, setLearning] = useState("")
@@ -17,13 +19,11 @@ export default function WhatWant() {
 
 
     return (
-        <div>
+        <div className='Container'>
       {Object.entries(filteredLangs).map(([key, value], index) => {
         return (
           <Link key={index} to={`${value}`}>
-            <button onClick={() => setLearning(value)}>
-            <img src={flagImages[key]} alt={key} />
-            </button>
+            <img className="FlagImage" src={flagImages[key]} alt={key} onClick={() => setLearning(value)}/>
           </Link>
         );
       })}

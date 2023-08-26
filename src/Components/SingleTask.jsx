@@ -83,7 +83,6 @@ export function SingleTask() {
       setIsCorrect();
     } else if (currentTaskIndex === filteredTaskForTopic.length - 1) {
       return (
-
         setNoMoreTasksLeft(true)
       )
 
@@ -132,8 +131,8 @@ export function SingleTask() {
             style={{ "--missingwordLength": missingWordLength }}
           />
           {sentencePart2}
-
         </p>
+        
         <p>{translatedSentence.replace(missingWord, "________")}</p>
         <button onClick={checkAnswer}>{checkAnswerText}</button>
         {isCorrect ? <p>{rightText}</p> : <p>{wrongText}</p>}

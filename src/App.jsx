@@ -1,15 +1,19 @@
-import './Styles/App.css'
+import React from 'react';
+import './Styles/App.css';
 import { Wrapper } from './Components/Wrapper';
-import WhatKnow from './Components/WhatKnow';
+
 function App() {
   return (
-    <div id="MainBackground">  
-    {/**
-      <div className="background-svg1"></div>
-      <div className="background-svg2"></div>
-     */}
-<Wrapper />
+    <div>
+      <div id="MainBackground">
+        <div className="contentwrapper">     
+        <Wrapper />
+        </div>
+        <div className="background-svg1"></div>
+        <div className="background-svg2"></div>
       </div>
+
+    </div>
   );
 }
 

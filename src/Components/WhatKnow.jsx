@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import '../Styles/Selector.css'
 
 export const langs = {
   "german": 'de',
@@ -19,10 +20,8 @@ export default function WhatKnow() {
     <>
       {Object.entries(langs).map(([key, value], index) => {
         return (
-          <Link key={index} to={`/${value}`}>
-            <button onClick={() => setSpeaking(value)}>
-            <img src={flagImages[key]} alt={key} />
-            </button>
+          <Link className="flag-link" key={index} to={`/${value}`} >
+            <img className="FlagImage"  src={flagImages[key]} alt={key} onClick={() => setSpeaking(value)}/>
           </Link>
         );
       })}
