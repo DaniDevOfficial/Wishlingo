@@ -17,14 +17,19 @@ export default function WhatKnow() {
   const [speaking, setSpeaking] = useState(null);
 
   return (
-    <>
-      {Object.entries(langs).map(([key, value], index) => {
-        return (
-          <Link className="flag-link" key={index} to={`/${value}`} >
-            <img className="FlagImage"  src={flagImages[key]} alt={key} onClick={() => setSpeaking(value)}/>
-          </Link>
-        );
-      })}
-    </>
+    <div className="background-container"> 
+      <div className="flex-container">
+        <div className='Question'>Which Language Do you Speak</div>
+        <div className="grid-container">
+          {Object.entries(langs).map(([key, value], index) => {
+            return (
+              <Link className="flag-link" key={index} to={`/${value}`}>
+                <img className="FlagImage" src={flagImages[key]} alt={key} onClick={() => setSpeaking(value)} />
+              </Link>
+            );
+          })}
+        </div>
+      </div>
+    </div>
   );
 }

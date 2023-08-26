@@ -1,23 +1,60 @@
 
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); 
   justify-items: center; 
   align-items: center; 
-  padding: 20px; 
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2% 2%;
+  grid-auto-flow: row;
+}
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr 1fr ;
+  }
 }
 
+@media (max-width: 480px) {
+  .grid-container {
+    grid-template-columns: 1fr ;
+    margin-bottom: 50px;
+  }
+}
+.background-container {
+  background-color: #f0f0f0; 
+  border-radius: 15px;  
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 10%;
+  max-height: 100vh; /* Set a maximum height */
+  overflow-y: auto; 
+} 
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+
+.Question {
+  margin-bottom: 30px;
+  font-size: 24px;
+  font-style: bold;
+}
 .flag-link {
   text-decoration: none;
   outline: none;
 }
 
 .FlagImage {
-  width: 250px; 
-  height: auto; 
+  width: 100%; 
+  max-width: 400px;
+  height: auto;
   object-fit: cover;
   border: none;
-  margin: 1%;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; 
   border-radius: 8px;
 }
