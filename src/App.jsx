@@ -1,5 +1,6 @@
 import './Styles/App.css'
 import { Wrapper } from './Components/Wrapper';
+import WhatKnow from './Components/WhatKnow';
 function App() {
   return (
     <div id="MainBackground">  
