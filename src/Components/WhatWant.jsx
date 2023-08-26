@@ -6,10 +6,13 @@ export default function WhatWant() {
     const [learning, setLearning] = useState("")
     const location = useLocation();
     const currentPath = location.pathname;
-    const cutPath = currentPath.substring(1)
+    const pathSegments = currentPath.split('/').filter(segment => segment !== "");
+    const knownLang = pathSegments[0];
+
+
 
     const filteredLangs = Object.fromEntries(
-        Object.entries(langs).filter(([key, value]) => value !== cutPath)
+        Object.entries(langs).filter(([key, value]) => value !== knownLang)
     );
 
 

@@ -26,7 +26,6 @@ export default function WhatKnow() {
           </Link>
         );
       })}
-      {speaking}
     </>
   );
 }
