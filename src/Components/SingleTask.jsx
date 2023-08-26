@@ -1,5 +1,5 @@
 import tasksData from './Tasks/tasks.json';
-import { useLocation } from 'react-router-dom';
+import { useLocation, Link } from 'react-router-dom';
 import React, { useState, useEffect } from 'react';
 
 export function SingleTask() {
@@ -10,6 +10,50 @@ export function SingleTask() {
   const knownLang = pathSegments[0];
   const learnLang = pathSegments[1];
   const topic = decodeURIComponent(pathSegments[2]);
+
+
+  let noTasksAvailableForThisParamText = "No tasks found for the specified parameters.";
+  let rightText = "Correct!";
+  let wrongText = "Wrong!";
+  let theAnswerIsText = "The correct answer is: ";
+  let checkAnswerText = "Check Answer";
+  let nextText = "Next";
+  let resultsForExerciseText = "Results for Exercise: ";
+  let youGotText = "You got ";
+  let outOfText = "Out of  "
+  let stayStrongText = "Stay Strong and Learn even More!!";
+  let doneText = "Done";
+  let correctText = "Questions Correct";
+
+
+
+  if (knownLang === "de") {
+    noTasksAvailableForThisParamText = "Keine Aufgaben für die angegebenen Parameter gefunden.";
+    rightText = "Richtig!";
+    wrongText = "Falsch!";
+    theAnswerIsText = "Die richtige Lösung ist: ";
+    checkAnswerText = "Antwort überprüfen";
+    nextText = "Weiter";
+    resultsForExerciseText = "Ergebnisse für Übung: ";
+    youGotText = "Du hast ";
+    outOfText = "von ";
+    correctText = " Fragen richtig";
+    stayStrongText = "Bleib stark und lerne noch mehr!!";
+    doneText = "Weiter";
+  } else if (knownLang === "fr") {
+    noTasksAvailableForThisParamText = "Aucune tâche trouvée pour les paramètres spécifiés.";
+    rightText = "Correct !";
+    wrongText = "Faux !";
+    theAnswerIsText = "La solution correcte est :";
+    checkAnswerText = "Vérifier la réponse";
+    nextText = "Suivant";
+    resultsForExerciseText = "Résultats de l'exercice :";
+    youGotText = "Vous avez";
+    outOfText = "sur ";
+    correctText = " Questions correctes";
+    stayStrongText = "Restez fort et apprenez encore plus !!";
+    doneText = "Terminé";
+  }
 
 
   const [currentTaskIndex, setCurrentTaskIndex] = useState(0);
@@ -24,7 +68,8 @@ export function SingleTask() {
   );
 
   const task = filteredTaskForTopic[currentTaskIndex];
-  const originalSentence = task.sentence;
+  const sentencePart1 = task.sentencePart1;
+  const sentencePart2 = task.sentencePart2;
   const translatedSentence = task.translation;
   const missingWord = task.missingWord;
 
@@ -34,21 +79,21 @@ export function SingleTask() {
       setCurrentTaskIndex(currentTaskIndex + 1);
       setUserInput("");
       setIsCorrect();
-    } else if (currentTaskIndex === filteredTaskForTopic.length - 1){
-        return(
+    } else if (currentTaskIndex === filteredTaskForTopic.length - 1) {
+      return (
 
-            setNoMoreTasksLeft(true)
-        )
+        setNoMoreTasksLeft(true)
+      )
 
     }
   };
 
 
   if (!task) {
-    return <p>No tasks found for the specified parameters.</p>;
+    return <p>{noTasksAvailableForThisParamText}</p>;
   }
 
- 
+
 
   const handleInputChange = event => {
     setUserInput(event.target.value);
@@ -57,7 +102,7 @@ export function SingleTask() {
   const checkAnswer = () => {
     if (userInput.toLowerCase() === missingWord.toLowerCase()) {
       setIsCorrect(true);
-      let tempCorrect = amoutOfCorrect+1
+      let tempCorrect = amoutOfCorrect + 1
       setAmountOfCorrect(tempCorrect)
     } else {
       setIsCorrect(false);
@@ -66,22 +111,31 @@ export function SingleTask() {
 
   return (
     <div>    {noMoreTasksLeft ? (
-        <p>No tasks left.</p>
-      ) : (
+      <div>
+        <p>{resultsForExerciseText} {topic}</p>
+        <div> {youGotText} {amoutOfCorrect} {outOfText} {filteredTaskForTopic.length - 1}  {correctText}</div>
+        <div>{stayStrongText}</div>
+        <Link to={`/${knownLang}/${learnLang}`}> {doneText}</Link>
+      </div>
+    ) : (
       <>
-      <p>{originalSentence}</p>
-      <p>{translatedSentence.replace(missingWord, "________")}</p>
-      <input type="text" value={userInput} onChange={handleInputChange} />
-      <button onClick={checkAnswer}>Check Answer</button>
-      {isCorrect ? <p>Richtig!</p> : <p>Falsch!</p>}
-      <p>Die richtige Lösung wäre: {missingWord}</p>
-      {amoutOfCorrect}
-      <button onClick={goToNextTask}>Next</button>
-      {currentTaskIndex}
-      {filteredTaskForTopic.length - 1}
+        <p>
+          {sentencePart1} 
+          <input type="text" value={userInput} onChange={handleInputChange} />
+          {sentencePart2}
+
+        </p>
+        <p>{translatedSentence.replace(missingWord, "________")}</p>
+        <button onClick={checkAnswer}>{checkAnswerText}</button>
+        {isCorrect ? <p>{rightText}</p> : <p>{wrongText}</p>}
+        <p>{theAnswerIsText} {missingWord}</p>
+        {amoutOfCorrect}
+        <button onClick={goToNextTask}>{nextText}</button>
+        {currentTaskIndex}
+        {filteredTaskForTopic.length - 1}
       </>
-      )}
-      
+    )}
+
     </div>
   );
 }
