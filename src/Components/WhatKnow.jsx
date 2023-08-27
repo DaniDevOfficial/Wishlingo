@@ -20,7 +20,7 @@ export default function WhatKnow() {
     <div className="background-container"> 
       <div className="flex-container">
         <div className='Question'>Which Language Do you Speak</div>
-        <div className="grid-container">
+        <div className="grid-container" id="KnownLangGrid">
           {Object.entries(langs).map(([key, value], index) => {
             return (
               <Link className="flag-link" key={index} to={`/${value}`}>

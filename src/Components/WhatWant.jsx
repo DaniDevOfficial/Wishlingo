@@ -11,6 +11,14 @@ export default function WhatWant() {
   const pathSegments = currentPath.split('/').filter(segment => segment !== "");
   const knownLang = pathSegments[0];
 
+let WhichLangLearnText = "Which Language do you want to Learn"
+
+if (knownLang === "de") {
+  WhichLangLearnText = "Welche Sprache möchtest du Lernen";
+} else if (knownLang === "fr"){
+
+  WhichLangLearnText = "Quelle langue veux-tu apprendre"
+}
 
 
   const filteredLangs = Object.fromEntries(
@@ -21,8 +29,8 @@ export default function WhatWant() {
   return (
     <div className="background-container">
       <div className="flex-container">
-        <div className='Question'>Which Language Do you Speak</div>
-        <div className="grid-container">
+        <div className='Question'>{WhichLangLearnText}</div>
+        <div className="grid-container" id="LearnLangGrid">
           {Object.entries(filteredLangs).map(([key, value], index) => {
             return (
               <Link className="flag-link" key={index} to={`${value}`}>

@@ -1,13 +1,18 @@
-
 .grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); 
   justify-items: center; 
   align-items: center; 
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
   gap: 2% 2%;
   grid-auto-flow: row;
+}
+#KnownLangGrid{
+  grid-template-columns: repeat(3, 1fr);
+}
+
+#LearnLangGrid{
+  grid-template-columns: repeat(2, 1fr);
 }
 @media (max-width: 768px) {
   .grid-container {
@@ -27,8 +32,9 @@
   margin-left: 10%;
   margin-right: 10%;
   margin-top: 10%;
-  max-height: 100vh; /* Set a maximum height */
-  overflow-y: auto; 
+  max-height: 100vh; 
+  overflow-y: auto;
+
 } 
 
 .flex-container {
@@ -37,12 +43,15 @@
   align-items: center;
   justify-content: center;
   margin: 20px;
+  animation: fadeInUp 1s 0s forwards;
+
 }
 
 .Question {
   margin-bottom: 30px;
   font-size: 24px;
-  font-style: bold;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
 }
 .flag-link {
   text-decoration: none;
@@ -57,9 +66,42 @@
   border: none;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; 
   border-radius: 8px;
+
 }
 
 .FlagImage:hover {
     transform: scale(1.1); 
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0.5;
+    transform: translateY(-5%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.background-container {
+  background-color: #f0f0f0;
+  border-radius: 15px;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 10%;
+  max-height: 100vh;
+  overflow-y: auto;
+  opacity: 0; /* Start with zero opacity */
+  animation: revealSite 1s forwards; /* Apply the reveal animation */
+}
+
+@keyframes revealSite {
+  from {
+    opacity: 0;
+    transform: scale(0); /* Start slightly smaller */
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
