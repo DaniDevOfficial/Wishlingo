@@ -698,5 +698,392 @@
     ],
     "topic": "Natur",
     "positionInTopic": 10
+  },{
+    "knowLang": "de",
+    "learnLang": "fr",
+    "sentencePart1": "Salut, comme",
+    "sentencePart2": " aujourd'hui ?",
+    "translation": "Hallo, wie geht es dir heute?",
+    "missingWord": "ça va",
+    "hints": [
+      "Fragt nach dem Zustand einer Person."
+    ],
+    "topic": "Begrüßungen",
+    "positionInTopic": 1
+  },
+  {
+    "knowLang": "de",
+    "learnLang": "fr",
+    "sentencePart1": "Bon",
+    "sentencePart2": "!",
+    "translation": "Guten Tag!",
+    "missingWord": "jour",
+    "hints": [
+      "Eine freundliche Begrüßung, um den Tag zu beginnen."
+    ],
+    "topic": "Begrüßungen",
+    "positionInTopic": 2
+  },
+  {
+    "knowLang": "de",
+    "learnLang": "fr",
+    "sentencePart1": "Ravi de",
+    "sentencePart2": " faire ta connaissance.",
+    "translation": "Freut mich, dich kennenzulernen.",
+    "missingWord": "te rencontrer",
+    "hints": [
+      "Eine höfliche Begrüßung bei der ersten Begegnung."
+    ],
+    "topic": "Begrüßungen",
+    "positionInTopic": 3
+  },
+  {
+    "knowLang": "de",
+    "learnLang": "fr",
+    "sentencePart1": "Comment ça",
+    "sentencePart2": " ?",
+    "translation": "Wie läuft's?",
+    "missingWord": "va",
+    "hints": [
+      "Demande le statut actuel ou l'évolution de quelque chose."
+    ],
+    "topic": "Begrüßungen",
+    "positionInTopic": 4
+  },
+  {
+    "knowLang": "de",
+    "learnLang": "fr",
+    "sentencePart1": "Bien",
+    "sentencePart2": " !",
+    "translation": "Guten Nachmittag!",
+    "missingWord": "après-midi",
+    "hints": [
+      "Eine Begrüßung in der Mitte des Tages."
+    ],
+    "topic": "Begrüßungen",
+    "positionInTopic": 5
+  },
+  {
+    "knowLang": "de",
+    "learnLang": "fr",
+    "sentencePart1": "Quoi de",
+    "sentencePart2": " nouveau ?",
+    "translation": "Was gibt's Neues?",
+    "missingWord": "neuf",
+    "hints": [
+      "Fragt nach dem aktuellen Geschehen."
+    ],
+    "topic": "Begrüßungen",
+    "positionInTopic": 6
+  },
+  {
+    "knowLang": "de",
+    "learnLang": "fr",
+    "sentencePart1": "Comment va la",
+    "sentencePart2": " ?",
+    "translation": "Wie geht es der Familie?",
+    "missingWord": "famille",
+    "hints": [
+      "Fragt nach dem Wohlbefinden der Familie."
+    ],
+    "topic": "Begrüßungen",
+    "positionInTopic": 7
+  },
+  {
+    "knowLang": "de",
+    "learnLang": "fr",
+    "sentencePart1": "Comment",
+    "sentencePart2": " tu ?",
+    "translation": "Wie heißt du?",
+    "missingWord": "tu t'appelles",
+    "hints": [
+      "Fragt nach dem Namen einer Person."
+    ],
+    "topic": "Begrüßungen",
+    "positionInTopic": 8
+  },{
+    "knowLang": "de",
+    "learnLang": "fr",
+    "sentencePart1": "Bienvenue",
+    "sentencePart2": " !",
+    "translation": "Willkommen zuhause!",
+    "missingWord": "à la maison",
+    "hints": [
+      "Eine herzliche Begrüßung, wenn jemand nach Hause kommt."
+    ],
+    "topic": "Begrüßungen",
+    "positionInTopic": 9
+  },
+  {
+    "knowLang": "de",
+    "learnLang": "fr",
+    "sentencePart1": "Je sais",
+    "sentencePart2": " allemand.",
+    "translation": "Ich kann Deutsch sprechen.",
+    "missingWord": "parler",
+    "hints": [
+      "Gibt an, welche Sprachen du beherrschst."
+    ],
+    "topic": "Begrüßungen",
+    "positionInTopic": 10
+  },{
+    "id": 61,
+    "knowLang": "de",
+    "learnLang": "fr",
+    "sentencePart1": "Pour le déjeuner, j'aime manger",
+    "sentencePart2": "avec une salade.",
+    "translation": "Mittags esse ich gerne Quiche mit einem Salat.",
+    "missingWord": "quiche",
+    "hints": ["Es ist eine herzhafte französische Spezialität."],
+    "topic": "Essen",
+    "positionInTopic": 1
+  },
+  {
+    "id": 62,
+    "knowLang": "de",
+    "learnLang": "fr",
+    "sentencePart1": "Le soir, je prépare souvent des pâtes",
+    "sentencePart2": "pour le dîner.",
+    "translation": "Abends mache ich oft Pasta zum Abendessen.",
+    "missingWord": "pâtes",
+    "hints": ["Es ist eine beliebte Speise aus Hartweizengrieß."],
+    "topic": "Essen",
+    "positionInTopic": 2
+  },
+  {
+    "id": 63,
+    "knowLang": "de",
+    "learnLang": "fr",
+    "sentencePart1": "Pendant les barbecues, nous aimons griller",
+    "sentencePart2": "et des légumes.",
+    "translation": "Beim Grillen genießen wir es, Würstchen und Gemüse zu grillen.",
+    "missingWord": "saucisses",
+    "hints": ["Es sind gebrühte oder gegrillte Fleischstücke."],
+    "topic": "Essen",
+    "positionInTopic": 3
+  },
+  {
+    "id": 64,
+    "knowLang": "de",
+    "learnLang": "fr",
+    "sentencePart1": "Lors des fêtes, nous servons toujours",
+    "sentencePart2": "comme dessert.",
+    "translation": "Bei Feiern servieren wir immer Kuchen als Nachtisch.",
+    "missingWord": "gâteau",
+    "hints": ["Es ist eine süße Speise, die oft mit Kerzen auf Geburtstagsfeiern kommt."],
+    "topic": "Essen",
+    "positionInTopic": 4
+  },
+  {
+    "id": 65,
+    "knowLang": "de",
+    "learnLang": "fr",
+    "sentencePart1": "Au goûter, je mange souvent des fruits",
+    "sentencePart2": "et des noix.",
+    "translation": "Zum Snack esse ich oft Früchte und Nüsse.",
+    "missingWord": "fruits",
+    "hints": ["Es sind natürliche, essbare Produkte von Bäumen oder Pflanzen."],
+    "topic": "Essen",
+    "positionInTopic": 5
+  },
+  {
+    "id": 66,
+    "knowLang": "de",
+    "learnLang": "fr",
+    "sentencePart1": "Quand il fait chaud, une glace à la vanille",
+    "sentencePart2": "est très rafraîchissante.",
+    "translation": "Bei heißem Wetter ist ein Vanilleeis sehr erfrischend.",
+    "missingWord": "glace",
+    "hints": ["Es ist eine gefrorene Süßspeise, die man im Sommer genießt."],
+    "topic": "Essen",
+    "positionInTopic": 6
+  },
+  {
+    "id": 67,
+    "knowLang": "de",
+    "learnLang": "fr",
+    "sentencePart1": "Le matin, je bois un",
+    "sentencePart2": "pour me réveiller.",
+    "translation": "Morgens trinke ich Kaffee, um aufzuwachen.",
+    "missingWord": "café",
+    "hints": ["Es ist ein heißes Getränk mit Koffein, das oft morgens getrunken wird."],
+    "topic": "Essen",
+    "positionInTopic": 7
+  },
+  {
+    "id": 68,
+    "knowLang": "de",
+    "learnLang": "fr",
+    "sentencePart1": "En entrée, nous avons dégusté une délicieuse",
+    "sentencePart2": "au restaurant.",
+    "translation": "Als Vorspeise hatten wir eine köstliche Suppe im Restaurant.",
+    "missingWord": "soupe",
+    "hints": ["Es ist ein flüssiges Gericht, das oft vor dem Hauptgang serviert wird."],
+    "topic": "Essen",
+    "positionInTopic": 8
+  },
+  {
+    "id": 69,
+    "knowLang": "de",
+    "learnLang": "fr",
+    "sentencePart1": "Pendant les vacances, nous aimons déguster des plats",
+    "sentencePart2": "de différentes cultures.",
+    "translation": "Während des Urlaubs genießen wir Gerichte aus verschiedenen Kulturen.",
+    "missingWord": "exotiques",
+    "hints": ["Es sind ungewöhnliche Gerichte aus fremden Ländern."],
+    "topic": "Essen",
+    "positionInTopic": 9
+  },
+  {
+    "id": 70,
+    "knowLang": "de",
+    "learnLang": "fr",
+    "sentencePart1": "Lors des réunions de famille, ma grand-mère prépare toujours des",
+    "sentencePart2": "faites maison.",
+    "translation": "Bei Familientreffen bereitet meine Großmutter immer hausgemachte Kekse zu.",
+    "missingWord": "biscuits",
+    "hints": ["Es sind kleine süße Gebäcke, die im Ofen gebacken werden."],
+    "topic": "Essen",
+    "positionInTopic": 10
+  },  {
+    "id": 71,
+    "knowLang": "en",
+    "learnLang": "de",
+    "sentencePart1": "Während ich fernsehe, trinke ich gerne",
+    "sentencePart2": ".",
+    "translation": "While watching TV, I like to drink water",
+    "missingWord": "Wasser",
+    "hints": ["It's the German word for 'water'."],
+    "topic": "Food",
+    "positionInTopic": 1
+  },
+  {
+    "id": 72,
+    "knowLang": "en",
+    "learnLang": "de",
+    "sentencePart1": "Das ist ein",
+    "sentencePart2": ".",
+    "translation": "That is a Dog",
+    "missingWord": "Hund",
+    "hints": ["A loyal animal companion."],
+    "topic": "Animals",
+    "positionInTopic": 1
+  },
+  {
+    "id": 73,
+    "knowLang": "en",
+    "learnLang": "de",
+    "sentencePart1": "Ich habe meinen",
+    "sentencePart2": "Heute.",
+    "translation": "I have my Birthday today",
+    "missingWord": "Geburtstag",
+    "hints": ["I celebrate it once a year."],
+    "topic": "Holidays",
+    "positionInTopic": 1
+  }, {
+    "id": 74,
+    "knowLang": "en",
+    "learnLang": "fr",
+    "sentencePart1": "En regardant la télévision, j'aime boire de ",
+    "sentencePart2": ".",
+    "translation": "While watching TV, I like to drink water",
+    "missingWord": "l'eau",
+    "hints": ["It's the German word for 'water'."],
+    "topic": "Food",
+    "positionInTopic": 1
+  },
+  {
+    "id": 75,
+    "knowLang": "en",
+    "learnLang": "fr",
+    "sentencePart1": "C'est un ",
+    "sentencePart2": ".",
+    "translation": "That is a Dog",
+    "missingWord": "chien",
+    "hints": ["A loyal animal companion."],
+    "topic": "Animals",
+    "positionInTopic": 1
+  },
+  {
+    "id": 76,
+    "knowLang": "en",
+    "learnLang": "fr",
+    "sentencePart1": "J'ai mon",
+    "sentencePart2": " aujourd'hui!!",
+    "translation": "I have my Birthday today",
+    "missingWord": "anniversaire",
+    "hints": ["I celebrate it once a year."],
+    "topic": "Holidays",
+    "positionInTopic": 1
+  }, {
+    "id": 74,
+    "knowLang": "fr",
+    "learnLang": "en",
+    "sentencePart1": "While watching TV, I like to drink ",
+    "sentencePart2": ".",
+    "translation": "En regardant la télévision, j'aime boire de l'eau",
+    "missingWord": "water",
+    "hints": ["C'est le mot anglais pour 'eau'."],
+    "topic": "Nourriture",
+    "positionInTopic": 1
+  },
+  {
+    "id": 75,
+    "knowLang": "fr",
+    "learnLang": "en",
+    "sentencePart1": "That is a",
+    "sentencePart2": ".",
+    "translation": "C'est un chien",
+    "missingWord": "Dog",
+    "hints": ["Un fidèle compagnon animal."],
+    "topic": "Animaux",
+    "positionInTopic": 1
+  },
+  {
+    "id": 76,
+    "knowLang": "fr",
+    "learnLang": "en",
+    "sentencePart1": "I have my",
+    "sentencePart2": "today!!",
+    "translation": "J'ai mon I anniversaire aujourd'hui",
+    "missingWord": "Birthday",
+    "hints": ["Je le célèbre une fois par an."],
+    "topic": "Vacances",
+    "positionInTopic": 1
+  }, {
+    "id": 77,
+    "knowLang": "fr",
+    "learnLang": "de",
+    "sentencePart1": "Während ich fernsehe, trinke ich gerne",
+    "sentencePart2": ".",
+    "translation": "En regardant la télévision, j'aime boire de l'eau",
+    "missingWord": "Wasser",
+    "hints": ["C'est le mot allemand pour 'eau'."],
+    "topic": "Nourriture",
+    "positionInTopic": 1
+  },
+  {
+    "id": 78,
+    "knowLang": "fr",
+    "learnLang": "de",
+    "sentencePart1": "Das ist ein",
+    "sentencePart2": ".",
+    "translation": "C'est un chien",
+    "missingWord": "Hund",
+    "hints": ["Un fidèle compagnon animal."],
+    "topic": "Animaux",
+    "positionInTopic": 1
+  },
+  {
+    "id": 79,
+    "knowLang": "fr",
+    "learnLang": "de",
+    "sentencePart1": " Ich habe heute",
+    "sentencePart2": "!!",
+    "translation": "J'ai mon I anniversaire aujourd'hui",
+    "missingWord": "Geburtstag",
+    "hints": ["Je le célèbre une fois par an."],
+    "topic": "Vacances",
+    "positionInTopic": 1
   }
 ]
