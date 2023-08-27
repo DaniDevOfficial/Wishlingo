@@ -7,7 +7,9 @@
     "sentencePart2": " you?",
     "translation": "Hallo, wie geht es dir?",
     "missingWord": "are",
-    "hints": ["It's the English word for 'geht'."],
+    "hints": [
+      "Frag nach dem Zustand einer Person."
+    ],
     "topic": "Begrüßungen",
     "positionInTopic": 1
   },
@@ -19,7 +21,9 @@
     "sentencePart2": "!",
     "translation": "Guten Morgen!",
     "missingWord": "morning",
-    "hints": ["It's the English word for 'morning'."],
+    "hints": [
+      "Ein freundlicher Gruß zu Beginn des Tages."
+    ],
     "topic": "Begrüßungen",
     "positionInTopic": 2
   },
@@ -31,7 +35,9 @@
     "sentencePart2": " you.",
     "translation": "Schön, dich kennenzulernen.",
     "missingWord": "meet",
-    "hints": ["It's the English word for 'kennenzulernen'."],
+    "hints": [
+      "Eine höfliche Begrüßung, wenn du jemanden zum ersten Mal triffst."
+    ],
     "topic": "Begrüßungen",
     "positionInTopic": 3
   },
@@ -43,7 +49,9 @@
     "sentencePart2": ".",
     "translation": "Wie geht es so.",
     "missingWord": "going",
-    "hints": ["It's the English word for 'geht'."],
+    "hints": [
+      "Frage nach dem aktuellen Zustand oder Verlauf von etwas."
+    ],
     "topic": "Begrüßungen",
     "positionInTopic": 4
   },
@@ -55,7 +63,9 @@
     "sentencePart2": ".",
     "translation": "Guten Nachmittag.",
     "missingWord": "afternoon",
-    "hints": ["It's the English word for 'Nachmittag'."],
+    "hints": [
+      "Eine Begrüßung am Nachmittag."
+    ],
     "topic": "Begrüßungen",
     "positionInTopic": 5
   },
@@ -67,7 +77,9 @@
     "sentencePart2": "going on.",
     "translation": "Was ist los.",
     "missingWord": "is",
-    "hints": ["It's the English word for 'ist'."],
+    "hints": [
+      "Frage danach, was gerade passiert oder geschieht."
+    ],
     "topic": "Begrüßungen",
     "positionInTopic": 6
   },
@@ -79,7 +91,9 @@
     "sentencePart2": "?",
     "translation": "Wie geht es der Familie?",
     "missingWord": "family",
-    "hints": ["It's the English word for 'Familie'."],
+    "hints": [
+      "Frag nach dem Wohlbefinden der Familie."
+    ],
     "topic": "Begrüßungen",
     "positionInTopic": 7
   },
@@ -91,7 +105,9 @@
     "sentencePart2": "name?",
     "translation": "Wie heißt du?",
     "missingWord": "your",
-    "hints": ["It's the English word for 'du / dein'."],
+    "hints": [
+      "Bitte um den Namen einer Person."
+    ],
     "topic": "Begrüßungen",
     "positionInTopic": 8
   },
@@ -103,7 +119,9 @@
     "sentencePart2": "!",
     "translation": "Willkommen Zuhause!",
     "missingWord": "home",
-    "hints": ["It's the English word for 'Zuhause'."],
+    "hints": [
+      "Eine herzliche Begrüßung, wenn jemand nach Hause kommt."
+    ],
     "topic": "Begrüßungen",
     "positionInTopic": 9
   },
@@ -115,8 +133,570 @@
     "sentencePart2": " German.",
     "translation": "Ich kann Deutsch sprechen.",
     "missingWord": "speak",
-    "hints": ["It's the English word for 'sprechen'."],
+    "hints": [
+      "Drücke aus, welche Sprache du beherrschst."
+    ],
     "topic": "Begrüßungen",
+    "positionInTopic": 10
+  },
+  {
+    "id": 11,
+    "knowLang": "de",
+    "learnLang": "en",
+    "sentencePart1": "I can't resist a good",
+    "sentencePart2": ".",
+    "translation": "Ich kann einem guten Essen nicht widerstehen.",
+    "missingWord": "meal",
+    "hints": [
+      "Ausdruck für leckeres Essen, dem du nicht widerstehen kannst."
+    ],
+    "topic": "Essen",
+    "positionInTopic": 1
+  },
+  {
+    "id": 12,
+    "knowLang": "de",
+    "learnLang": "en",
+    "sentencePart1": "Sunday mornings are perfect for enjoying",
+    "sentencePart2": ".",
+    "translation": "Sonntagmorgen sind perfekt, um einen Brunch zu genießen.",
+    "missingWord": "brunch",
+    "hints": [
+      "Mahlzeit, die Frühstück und Mittagessen kombiniert."
+    ],
+    "topic": "Essen",
+    "positionInTopic": 2
+  },
+  {
+    "id": 13,
+    "knowLang": "de",
+    "learnLang": "en",
+    "sentencePart1": "When I'm tired, I often crave",
+    "sentencePart2": ".",
+    "translation": "Wenn ich müde bin, habe ich oft Lust auf Snacks.",
+    "missingWord": "snacks",
+    "hints": [
+      "Kleine, leckere Happen zwischen den Mahlzeiten."
+    ],
+    "topic": "Essen",
+    "positionInTopic": 3
+  },
+  {
+    "id": 14,
+    "knowLang": "de",
+    "learnLang": "en",
+    "sentencePart1": "The aroma of freshly baked",
+    "sentencePart2": " fills the kitchen.",
+    "translation": "Der Duft von frisch gebackenem Brot erfüllt die Küche.",
+    "missingWord": "bread",
+    "hints": [
+      "Ein Grundnahrungsmittel, das oft gebacken wird."
+    ],
+    "topic": "Essen",
+    "positionInTopic": 4
+  },
+  {
+    "id": 15,
+    "knowLang": "de",
+    "learnLang": "en",
+    "sentencePart1": "A bowl of warm",
+    "sentencePart2": "is comforting on a cold day.",
+    "translation": "Eine Schüssel warme Suppe ist an einem kalten Tag tröstlich.",
+    "missingWord": "soup",
+    "hints": [
+      "Flüssiges Gericht, das oft heiß serviert wird."
+    ],
+    "topic": "Essen",
+    "positionInTopic": 5
+  },
+  {
+    "id": 16,
+    "knowLang": "de",
+    "learnLang": "en",
+    "sentencePart1": "I enjoy",
+    "sentencePart2": "with my friends on weekends.",
+    "translation": "Ich genieße es, am Wochenende mit meinen Freunden zu kochen.",
+    "missingWord": "cooking",
+    "hints": [
+      "Aktivität, bei der Essen zubereitet wird."
+    ],
+    "topic": "Essen",
+    "positionInTopic": 6
+  },
+  {
+    "id": 17,
+    "knowLang": "de",
+    "learnLang": "en",
+    "sentencePart1": "Nothing beats a",
+    "sentencePart2": "on a hot summer day.",
+    "translation": "An einem heißen Sommertag geht nichts über ein Eis.",
+    "missingWord": "ice cream",
+    "hints": [
+      "Erfrischendes Dessert, oft gefroren."
+    ],
+    "topic": "Essen",
+    "positionInTopic": 7
+  },
+  {
+    "id": 18,
+    "knowLang": "de",
+    "learnLang": "en",
+    "sentencePart1": "I like to drink",
+    "sentencePart2": "before starting my day.",
+    "translation": "Ich trinke gerne Kaffee, bevor ich meinen Tag beginne.",
+    "missingWord": "coffee",
+    "hints": [
+      "Beliebtes Getränk mit Koffein."
+    ],
+    "topic": "Essen",
+    "positionInTopic": 8
+  },
+  {
+    "id": 19,
+    "knowLang": "de",
+    "learnLang": "en",
+    "sentencePart1": "My favorite",
+    "sentencePart2": "is pizza.",
+    "translation": "Meine Lieblings-Essen ist Pizza.",
+    "missingWord": "food",
+    "hints": [
+      "Das, was du gerne isst und genießt."
+    ],
+    "topic": "Essen",
+    "positionInTopic": 9
+  },
+  {
+    "id": 20,
+    "knowLang": "de",
+    "learnLang": "en",
+    "sentencePart1": "While watching TV, I like to drink",
+    "sentencePart2": ".",
+    "translation": "Während ich Fernsehe trinke ich gerne Cola.",
+    "missingWord": "Coke",
+    "hints": [
+      "Erfrischendes Getränk mit Kohlensäure."
+    ],
+    "topic": "Essen",
+    "positionInTopic": 10
+  },
+  {
+    "id": 21,
+    "knowLang": "de",
+    "learnLang": "en",
+    "sentencePart1": "In my free time, I like to",
+    "sentencePart2": "while humming a tune.",
+    "translation": "In meiner Freizeit mache ich gerne Sport und summe dabei eine Melodie.",
+    "missingWord": "exercise",
+    "hints": [
+      "Körperliche Aktivität zur Gesunderhaltung."
+    ],
+    "topic": "Freizeit",
+    "positionInTopic": 1
+  },
+  {
+    "id": 22,
+    "knowLang": "de",
+    "learnLang": "en",
+    "sentencePart1": "On lazy Sundays, I often",
+    "sentencePart2": "with a cup of coffee in hand.",
+    "translation": "An gemütlichen Sonntagen lese ich oft ein Buch und habe eine Tasse Kaffee in der Hand.",
+    "missingWord": "read a book",
+    "hints": [
+      "Entspannende Aktivität an einem ruhigen Tag."
+    ],
+    "topic": "Freizeit",
+    "positionInTopic": 2
+  },
+  {
+    "id": 23,
+    "knowLang": "de",
+    "learnLang": "en",
+    "sentencePart1": "During vacations, I enjoy",
+    "sentencePart2": "and taking in the scenic views.",
+    "translation": "Während des Urlaubs genieße ich Wandern und die malerische Aussicht.",
+    "missingWord": "hiking",
+    "hints": [
+      "Aktivität im Freien mit schöner Landschaft."
+    ],
+    "topic": "Freizeit",
+    "positionInTopic": 3
+  },
+  {
+    "id": 24,
+    "knowLang": "de",
+    "learnLang": "en",
+    "sentencePart1": "When the weather is nice, I like to",
+    "sentencePart2": "while feeling the breeze.",
+    "translation": "Bei schönem Wetter fahre ich gerne Fahrrad und spüre den Wind.",
+    "missingWord": "go cycling",
+    "hints": [
+      "Fortbewegung mit einem Zweirad bei gutem Wetter."
+    ],
+    "topic": "Freizeit",
+    "positionInTopic": 4
+  },
+  {
+    "id": 25,
+    "knowLang": "de",
+    "learnLang": "en",
+    "sentencePart1": "In the evenings, I often",
+    "sentencePart2": "to unwind.",
+    "translation": "Abends höre ich oft Musik, um mich zu entspannen.",
+    "missingWord": "listen to music",
+    "hints": [
+      "Sich beruhigen und erholen, oft mit Klängen."
+    ],
+    "topic": "Freizeit",
+    "positionInTopic": 5
+  },
+  {
+    "id": 26,
+    "knowLang": "de",
+    "learnLang": "en",
+    "sentencePart1": "When friends come over, we like to",
+    "sentencePart2": "and share lots of laughter.",
+    "translation": "Wenn Freunde zu Besuch kommen, spielen wir gerne Spiele und teilen viel Gelächter.",
+    "missingWord": "play games",
+    "hints": [
+      "Gemeinsame Aktivitäten zur Unterhaltung."
+    ],
+    "topic": "Freizeit",
+    "positionInTopic": 6
+  },
+  {
+    "id": 27,
+    "knowLang": "de",
+    "learnLang": "en",
+    "sentencePart1": "On weekends, I often",
+    "sentencePart2": "and capture memories.",
+    "translation": "An Wochenenden fotografiere ich oft und halte Erinnerungen fest.",
+    "missingWord": "take photos",
+    "hints": [
+      "Momente mit einer Kamera einfangen."
+    ],
+    "topic": "Freizeit",
+    "positionInTopic": 7
+  },
+  {
+    "id": 28,
+    "knowLang": "de",
+    "learnLang": "en",
+    "sentencePart1": "When I need a break, I like to",
+    "sentencePart2": "and let my thoughts wander.",
+    "translation": "Wenn ich eine Pause brauche, gehe ich gerne spazieren und lasse meine Gedanken schweifen.",
+    "missingWord": "take a walk",
+    "hints": [
+      "Entspannte Aktivität im Freien zur Erholung."
+    ],
+    "topic": "Freizeit",
+    "positionInTopic": 8
+  },
+  {
+    "id": 29,
+    "knowLang": "de",
+    "learnLang": "en",
+    "sentencePart1": "During evenings, I enjoy",
+    "sentencePart2": "while sipping on a warm drink.",
+    "translation": "Abends genieße ich Basteln und dabei trinke ich gerne ein warmes Getränk.",
+    "missingWord": "crafting",
+    "hints": [
+      "Kreative Handarbeit in den Abendstunden."
+    ],
+    "topic": "Freizeit",
+    "positionInTopic": 9
+  },
+  {
+    "id": 30,
+    "knowLang": "de",
+    "learnLang": "en",
+    "sentencePart1": "In my spare time, I often",
+    "sentencePart2": "and get lost in the story.",
+    "translation": "In meiner Freizeit lese ich oft ein Buch und tauche in die Geschichte ein.",
+    "missingWord": "read a book",
+    "hints": [
+      "Zeitvertreib, der dich in andere Welten entführt."
+    ],
+    "topic": "Freizeit",
+    "positionInTopic": 10
+  },
+  {
+    "id": 31,
+    "knowLang": "de",
+    "learnLang": "en",
+    "sentencePart1": "When I have free time, I like to",
+    "sentencePart2": "to relax.",
+    "translation": "Wenn ich Freizeit habe, entspanne ich mich gerne, indem ich lese.",
+    "missingWord": "read",
+    "hints": [
+      "Es geht darum, Buchstaben in Wörter zu verwandeln."
+    ],
+    "topic": "Hobbies",
+    "positionInTopic": 1
+  },
+  {
+    "id": 32,
+    "knowLang": "de",
+    "learnLang": "en",
+    "sentencePart1": "I'm passionate about",
+    "sentencePart2": "whenever I get the chance.",
+    "translation": "Ich bin leidenschaftlich daran interessiert, zu malen, wann immer ich die Gelegenheit dazu habe.",
+    "missingWord": "painting",
+    "hints": [
+      "Mit Farben auf Leinwänden kreativ werden."
+    ],
+    "topic": "Hobbies",
+    "positionInTopic": 2
+  },
+  {
+    "id": 33,
+    "knowLang": "de",
+    "learnLang": "en",
+    "sentencePart1": "One of my favorite things to do is",
+    "sentencePart2": "in the great outdoors.",
+    "translation": "Eines meiner Lieblingsbeschäftigungen ist es, in der freien Natur zu wandern.",
+    "missingWord": "hike",
+    "hints": [
+      "Es geht darum, die Natur und Berge zu erkunden."
+    ],
+    "topic": "Hobbies",
+    "positionInTopic": 3
+  },
+  {
+    "id": 34,
+    "knowLang": "de",
+    "learnLang": "en",
+    "sentencePart1": "In my spare time, I often",
+    "sentencePart2": "to keep my mind active.",
+    "translation": "In meiner Freizeit löse ich oft Rätsel, um meinen Geist aktiv zu halten.",
+    "missingWord": "solve puzzles",
+    "hints": [
+      "Knifflige Aufgaben, die Gehirnschmalz erfordern."
+    ],
+    "topic": "Hobbies",
+    "positionInTopic": 4
+  },
+  {
+    "id": 35,
+    "knowLang": "de",
+    "learnLang": "en",
+    "sentencePart1": "Whenever I want to unwind, I",
+    "sentencePart2": "to clear my mind.",
+    "translation": "Wenn ich mich entspannen möchte, meditiere ich, um meinen Geist zu klären.",
+    "missingWord": "meditate",
+    "hints": [
+      "Eine spirituelle Praxis zur Entspannung und Fokussierung."
+    ],
+    "topic": "Hobbies",
+    "positionInTopic": 5
+  },
+  {
+    "id": 36,
+    "knowLang": "de",
+    "learnLang": "en",
+    "sentencePart1": "I have a great time",
+    "sentencePart2": "with friends at the local game club.",
+    "translation": "Ich habe eine großartige Zeit damit, mit Freunden im örtlichen Spieleclub abzuhängen.",
+    "missingWord": "hanging out",
+    "hints": [
+      "Zeit in Gesellschaft verbringen und Spaß haben."
+    ],
+    "topic": "Hobbies",
+    "positionInTopic": 6
+  },
+  {
+    "id": 37,
+    "knowLang": "de",
+    "learnLang": "en",
+    "sentencePart1": "When the weather is nice, I",
+    "sentencePart2": "to get some fresh air.",
+    "translation": "Bei schönem Wetter gehe ich gerne spazieren, um frische Luft zu schnappen.",
+    "missingWord": "take walks",
+    "hints": [
+      "Sich im Freien bewegen, oft in der Natur."
+    ],
+    "topic": "Hobbies",
+    "positionInTopic": 7
+  },
+  {
+    "id": 38,
+    "knowLang": "de",
+    "learnLang": "en",
+    "sentencePart1": "I find joy in",
+    "sentencePart2": "and creating something unique.",
+    "translation": "Ich finde Freude darin, zu basteln und etwas Einzigartiges zu erschaffen.",
+    "missingWord": "crafting",
+    "hints": [
+      "Kreativ sein und Dinge von Grund auf gestalten."
+    ],
+    "topic": "Hobbies",
+    "positionInTopic": 8
+  },
+  {
+    "id": 39,
+    "knowLang": "de",
+    "learnLang": "en",
+    "sentencePart1": "During my free time, I often",
+    "sentencePart2": "to explore new places.",
+    "translation": "In meiner Freizeit erkunde ich oft neue Orte, um Neues zu entdecken.",
+    "missingWord": "travel",
+    "hints": [
+      "Die Welt erkunden und neue Abenteuer erleben."
+    ],
+    "topic": "Hobbies",
+    "positionInTopic": 9
+  },
+  {
+    "id": 40,
+    "knowLang": "de",
+    "learnLang": "en",
+    "sentencePart1": "To relax, I enjoy",
+    "sentencePart2": "while listening to music.",
+    "translation": "Um zu entspannen, genieße ich es, ein Bad zu nehmen, während ich Musik höre.",
+    "missingWord": "taking a bath",
+    "hints": [
+      "Sich im Wasser entspannen und Musik genießen."
+    ],
+    "topic": "Hobbies",
+    "positionInTopic": 10
+  },
+  {
+    "id": 41,
+    "knowLang": "de",
+    "learnLang": "en",
+    "sentencePart1": "I love spending time",
+    "sentencePart2": "to connect with nature.",
+    "translation": "Ich liebe es, Zeit im Wald zu verbringen, um mit der Natur in Kontakt zu treten.",
+    "missingWord": "in the forest",
+    "hints": [
+      "Ein dicht bewachsener Ort in der Natur."
+    ],
+    "topic": "Natur",
+    "positionInTopic": 1
+  },
+  {
+    "id": 42,
+    "knowLang": "de",
+    "learnLang": "en",
+    "sentencePart1": "One of my favorite outdoor activities is",
+    "sentencePart2": "by the water.",
+    "translation": "Eine meiner Lieblingsaktivitäten im Freien ist das Picknicken am Wasser.",
+    "missingWord": "picnicking",
+    "hints": [
+      "Ein entspanntes Essen im Freien, oft mit Korb und Decke."
+    ],
+    "topic": "Natur",
+    "positionInTopic": 2
+  },
+  {
+    "id": 43,
+    "knowLang": "de",
+    "learnLang": "en",
+    "sentencePart1": "I'm fascinated by",
+    "sentencePart2": "and their behaviors.",
+    "translation": "Ich bin fasziniert von Vögeln und ihrem Verhalten.",
+    "missingWord": "birds",
+    "hints": [
+      "Gefiederte Freunde mit Flügeln und Federn."
+    ],
+    "topic": "Natur",
+    "positionInTopic": 3
+  },
+  {
+    "id": 44,
+    "knowLang": "de",
+    "learnLang": "en",
+    "sentencePart1": "Exploring mountains and",
+    "sentencePart2": "is my ultimate adventure.",
+    "translation": "Das Erkunden von Bergen und Höhlen ist mein ultimatives Abenteuer.",
+    "missingWord": "caves",
+    "hints": [
+      "Dunkle, geheimnisvolle Orte im Gestein."
+    ],
+    "topic": "Natur",
+    "positionInTopic": 4
+  },
+  {
+    "id": 45,
+    "knowLang": "de",
+    "learnLang": "en",
+    "sentencePart1": "Gardening is not only a hobby; it's a way to",
+    "sentencePart2": "and nurture life.",
+    "translation": "Gärtnern ist nicht nur ein Hobby; es ist eine Möglichkeit, die Natur zu pflegen und Leben zu fördern.",
+    "missingWord": "care for",
+    "hints": [
+      "Pflanzen hegen und pflegen."
+    ],
+    "topic": "Natur",
+    "positionInTopic": 5
+  },
+  {
+    "id": 46,
+    "knowLang": "de",
+    "learnLang": "en",
+    "sentencePart1": "I find solace in",
+    "sentencePart2": "to escape the city noise.",
+    "translation": "Ich finde Trost darin, in die Berge zu fahren, um dem Stadtlärm zu entkommen.",
+    "missingWord": "heading to the mountains",
+    "hints": [
+      "Eine Reise in die Höhe, um Ruhe zu finden."
+    ],
+    "topic": "Natur",
+    "positionInTopic": 6
+  },
+  {
+    "id": 47,
+    "knowLang": "de",
+    "learnLang": "en",
+    "sentencePart1": "The sound of",
+    "sentencePart2": "is my favorite melody.",
+    "translation": "Der Klang von plätscherndem Wasser ist meine Lieblingsmelodie.",
+    "missingWord": "rippling water",
+    "hints": [
+      "Flüssigkeit, die sanft fließt und Geräusche macht."
+    ],
+    "topic": "Natur",
+    "positionInTopic": 7
+  },
+  {
+    "id": 48,
+    "knowLang": "de",
+    "learnLang": "en",
+    "sentencePart1": "Spending time in a",
+    "sentencePart2": "is like stepping into another world.",
+    "translation": "Zeit in einem Wald zu verbringen, fühlt sich an wie das Betreten einer anderen Welt.",
+    "missingWord": "forest",
+    "hints": [
+      "Ein dicht bewachsener Ort mit Bäumen und Pflanzen."
+    ],
+    "topic": "Natur",
+    "positionInTopic": 8
+  },
+  {
+    "id": 49,
+    "knowLang": "de",
+    "learnLang": "en",
+    "sentencePart1": "Camping under the stars gives me a sense of",
+    "sentencePart2": "and wonder.",
+    "translation": "Das Campen unter den Sternen vermittelt mir ein Gefühl von Abenteuer und Staunen.",
+    "missingWord": "adventure",
+    "hints": [
+      "Eine aufregende Erfahrung in der Natur."
+    ],
+    "topic": "Natur",
+    "positionInTopic": 9
+  },
+  {
+    "id": 50,
+    "knowLang": "de",
+    "learnLang": "en",
+    "sentencePart1": "I'm always eager to",
+    "sentencePart2": "and observe wildlife.",
+    "translation": "Ich bin immer begierig darauf, die Natur zu erkunden und die Tierwelt zu beobachten.",
+    "missingWord": "explore nature",
+    "hints": [
+      "Die Umgebung erkunden und Tiere in ihrem Lebensraum beobachten."
+    ],
+    "topic": "Natur",
     "positionInTopic": 10
   }
 ]

@@ -114,7 +114,7 @@ export function SingleTask() {
     <div>    {noMoreTasksLeft ? (
       <div>
         <p>{resultsForExerciseText} {topic}</p>
-        <div> {youGotText} {amoutOfCorrect} {outOfText} {filteredTaskForTopic.length - 1}  {correctText}</div>
+        <div> {youGotText} {amoutOfCorrect} {outOfText} {filteredTaskForTopic.length}  {correctText}</div>
         <div>{stayStrongText}</div>
         <Link to={`/${knownLang}/${learnLang}`}> {doneText}</Link>
       </div>
