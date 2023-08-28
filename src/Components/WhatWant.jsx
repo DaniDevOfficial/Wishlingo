@@ -1,4 +1,4 @@
-import { useState, useSyncExternalStore } from 'react';
+import { useState } from 'react';
 import { useLocation, Link } from 'react-router-dom';
 import { langs, flagImages } from './WhatKnow';
 
@@ -11,10 +11,10 @@ export default function WhatWant() {
   const pathSegments = currentPath.split('/').filter(segment => segment !== "");
   const knownLang = pathSegments[0];
 
-let WhichLangLearnText = "Which Language do you want to Learn"
+let WhichLangLearnText = "Which language do you want to learn"
 
 if (knownLang === "de") {
-  WhichLangLearnText = "Welche Sprache möchtest du Lernen";
+  WhichLangLearnText = "Welche Sprache möchtest du lernen";
 } else if (knownLang === "fr"){
 
   WhichLangLearnText = "Quelle langue veux-tu apprendre"
