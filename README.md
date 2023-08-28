@@ -1,70 +1,120 @@
-# Getting Started with Create React App
+<div align='center'>
+    <h1><b>Wishlingo</b></h1>
+    <p>A simple software to learn new languages by completing sentences.</p>
+</div>
+<div align="center">
+    <img src="https://firebasestorage.googleapis.com/v0/b/wishlingode.appspot.com/o/Logo%2FLogo.png?alt=media&token=5fdc4e7f-625d-4d60-b740-212d128046a2" alt="Description of the Image" style="width: 300px; border-radius: 10px;">
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+</div>
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## About
 
-### `npm start`
+The goal of this project is to develop a user-friendly software for learning new languages. The application presents a sentence in one language and then displays the same sentence in another language, with a missing word that the user needs to fill in. It then provides feedback on the correctness of the input and shows the correct answer if necessary.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+You can extend this basic concept by adding more features, such as multiple gaps in a sentence, an input form for adding new sentences, or multiple correct answers. However, remember that quality is more important than quantity, so prioritize a well-functioning application over adding many features with potential bugs.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Example
 
-### `npm test`
+Original Sentence: "Working at Andeo is a great experience!"
+Translated Sentence: "Bei Andeo zu arbeiten ist eine grossartige ________!"
+User Input: "Erfahrung"
+Feedback: "Correct!"
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### local installation:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. clone the repo
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+git clone https://github.com/David21092/Wishlingo
+```
 
-### `npm run eject`
+2. cd into cloned repo
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```
+cd Wishlingo
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. install dependencies
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```
+npm install
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```
+npm install react-router-dom
+```
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+4. run the app
 
-### Code Splitting
+```
+npm run start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+<br />
 
-### Analyzing the Bundle Size
+<br />
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+## 🔎 **SHOWCASE**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+additional images, gifs or videos of your project
 
-### Advanced Configuration
+<br />
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
+## 💻 **TECHNOLOGIES**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+[<div align="center"><img alt="CSS3" src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white" /></div>](#)
+[<div align="center"><img alt="HTML5" src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white" /></div>](#)
+[<div align="center"><img alt="JavaScript" src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E" /></div>](#)
+[<div align="center"><img alt="Chakra" src="https://img.shields.io/badge/chakra-%234ED1C5.svg?style=for-the-badge&logo=chakraui&logoColor=white" /></div>](#)
+[<div align="center"><img alt="Chart.js" src="https://img.shields.io/badge/chart.js-F5788D.svg?style=for-the-badge&logo=chart.js&logoColor=white" /></div>](#)
+[<div align="center"><img alt="NPM" src="https://img.shields.io/badge/NPM-%23000000.svg?style=for-the-badge&logo=npm&logoColor=white" /></div>](#)
+[<div align="center"><img alt="React" src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB" /></div>](#)
+[<div align="center"><img alt="React Router" src="https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white" /></div>](#)
+[<div align="center"><img alt="Firebase" src="https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase" /></div>](#)
 
-### `npm run build` fails to minify
+<br />
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+
+## 📎 **LICENSE**
+
+This project is licensed under the Creative Commons Attribution 4.0 International License. To view a copy of this license, visit [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
+
+### You are free to:
+
+- **Share**: Copy and redistribute the material in any medium or format.
+- **Adapt**: Remix, transform, and build upon the material for any purpose, even commercially.
+
+The licensor cannot revoke these freedoms as long as you follow the license terms.
+
+### Under the following terms:
+
+- **Attribution**: You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
+
+No additional restrictions: You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.
+
+#### Attribution Information:
+
+When using this work, please provide the following attribution:
+
+"Whishlingo" by David21092 is licensed under CC BY 4.0. To view a copy of this license, visit [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
+
+
+<br />
+
+---
+
+## 📌 **LINKS**
+
+[<img alt="Github" src="https://img.shields.io/badge/David21092-%23181717.svg?style=for-the-badge&logo=github&logoColor=white" />](https://github.com/David21092)
+
