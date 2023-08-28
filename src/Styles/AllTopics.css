@@ -4,17 +4,23 @@
     margin-left: 10%;
     margin-right: 10%;
     margin-top: 10%;
-    max-height: 100vh; 
     padding: 10px;
+    max-height: 100vh; 
+    overflow-y: auto;
 }
 
 #Topics{
     grid-template-columns: repeat(3, 1fr);
 }
-
+.grid-container-topics {
+  display: grid;
+  justify-items: center; 
+  align-items: center; 
+  display: grid;
+  grid-auto-flow: row;
+}
 .SingleTopicBox {
     border: 1px solid #979797;
-    padding: 15px;
     margin: 10px;
     border-radius: 10px;
     width: 40vh;
@@ -25,7 +31,14 @@
     text-align: center;
     transition: all 0.3s ease; 
   }
-  
+  .Title {
+    margin-bottom: 30px;
+    margin-top: 15px;
+    font-size: 24px;
+    color: #1b1b69;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+  }
   .SingleTopicBox:hover {
     transform: scale(1.05); 
     box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);     
@@ -35,6 +48,11 @@
     -webkit-text-fill-color: transparent;
     animation: shine 4s linear infinite;
   }
+
+  .link-style {
+    text-decoration: none; 
+    color: inherit; 
+}
 
   @keyframes shine {
     to {
@@ -50,21 +68,30 @@
   
   @media (min-width: 769px) {
     .SingleTopicBox {
-      font-size: 18px;
+      font-size: 25px;
     }
   }
-  @media (min-width: 1200px) {
-    .SingleTopicBox {
-      font-size: 24px;
-    }
-  }
+
   @media (min-width: 1800px) {
     .SingleTopicBox {
       font-size: 30px; 
     }
   }
+  @media (max-width: 768px) {
+    #Topics{
+      grid-template-columns: repeat(2, 1fr);
+      margin-bottom: 50px;
+    }
+    
+  
+  }
+  
+  @media (max-width: 550px) {
+    #Topics{
+      grid-template-columns: repeat(1, 1fr);
+      margin-bottom: 50px;
+    }
 
-.link-style {
-    text-decoration: none; 
-    color: inherit; 
-}
+  
+  }
+

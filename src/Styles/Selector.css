@@ -76,7 +76,7 @@
   border: none;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; 
   border-radius: 8px;
-
+  
 }
 
 .FlagImage:hover {
@@ -105,3 +105,20 @@
   }
 }
 
+
+
+@media (min-width: 769px) {
+  .Question {
+    font-size: 24px;
+  }
+}
+@media (min-width: 1200px) {
+  .Question {
+    font-size: 30px;
+  }
+}
+@media (min-width: 1800px) {
+  .Question {
+    font-size: 35px; 
+  }
+}

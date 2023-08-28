@@ -11,6 +11,20 @@ export function Alltopics() {
     const knownLang = pathSegments[0];
     const learnLang = pathSegments[1];
 
+    let Title
+    if(knownLang === "de" && learnLang === "fr"){
+        Title = "Du wilst also Französisch lernen"
+    } else if (knownLang === "de" && learnLang === "en"){
+        Title = "Du wilst also English lernen"
+    } else if (knownLang === "en" && learnLang === "de"){
+        Title = "So you want to learn German"
+    } else if (knownLang === "en" && learnLang === "fr"){
+        Title = "So you want to learn French"
+    } else if (knownLang === "fr" && learnLang === "en"){
+        Title = "Donc tu veux apprendre l'anglais"
+    } else if (knownLang === "fr" && learnLang === "en"){
+        Title ="Alors tu veux apprendre l'allemand"}
+
     const filteredTasks = tasksData.filter(task => task.knowLang === knownLang && task.learnLang === learnLang);
 
     const uniqueTopicsSet = new Set();
@@ -23,8 +37,10 @@ export function Alltopics() {
     return (
         <>
             <div className="background-containerTopics">
-                <div className='Title'>sum title</div>
-                <div className="grid-container" id="Topics">
+            <div className="flex-container">
+
+                <div className='Title'>{Title}</div>
+                <div className="grid-container-topics" id="Topics">
 
                     {uniqueTopicsArray.map((topic, index) => (
                         <Link key={index} to={`${topic}`} className="link-style">
@@ -33,6 +49,7 @@ export function Alltopics() {
                             </div>
                         </Link>
                     ))}
+                    </div>
                 </div>
             </div>
         </>
