@@ -1,0 +1,70 @@
+.background-containerTopics{
+    background-color: #d2ebfe; 
+    border-radius: 15px;  
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10%;
+    max-height: 100vh; 
+    padding: 10px;
+}
+
+#Topics{
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.SingleTopicBox {
+    border: 1px solid #979797;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 10px;
+    width: 40vh;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: all 0.3s ease; 
+  }
+  
+  .SingleTopicBox:hover {
+    transform: scale(1.05); 
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);     
+    background-image: linear-gradient(to left, #051937, #00466d, #007aa0, #00b2c9, #00b2c9,#007aa0,#00466d,#051937);    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 4s linear infinite;
+  }
+
+  @keyframes shine {
+    to {
+      background-position: 200% center;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .SingleTopicBox {
+      font-size: 14px; 
+    }
+  }
+  
+  @media (min-width: 769px) {
+    .SingleTopicBox {
+      font-size: 18px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .SingleTopicBox {
+      font-size: 24px;
+    }
+  }
+  @media (min-width: 1800px) {
+    .SingleTopicBox {
+      font-size: 30px; 
+    }
+  }
+
+.link-style {
+    text-decoration: none; 
+    color: inherit; 
+}

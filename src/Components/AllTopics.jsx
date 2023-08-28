@@ -2,8 +2,9 @@ import tasksData from './Tasks/tasks.json';
 import { useLocation, Link } from 'react-router-dom';
 import React, { useState } from 'react';
 import '../Styles/AllTopics.css'
+
 export function Alltopics() {
-    const [singleTask, setSingleTask] = useState("")
+    const [singleTask, setSingleTask] = useState("");
     const location = useLocation();
     const currentPath = location.pathname;
     const pathSegments = currentPath.split('/').filter(segment => segment !== "");
@@ -25,11 +26,13 @@ export function Alltopics() {
                 <div className='Title'>sum title</div>
                 <div className="grid-container" id="Topics">
 
-                {uniqueTopicsArray.map((topic, index) => (
-                    <Link key={index} to={`${topic}`}>
-                        <div onClick={() => setSingleTask(topic)} key={index}>{topic}</div>
-                    </Link>
-                ))}
+                    {uniqueTopicsArray.map((topic, index) => (
+                        <Link key={index} to={`${topic}`} className="link-style">
+                            <div className="SingleTopicBox">
+                                <div className="SingleTopic linear-wipe" onClick={() => setSingleTask(topic)} key={index}>{topic}</div>
+                            </div>
+                        </Link>
+                    ))}
                 </div>
             </div>
         </>
