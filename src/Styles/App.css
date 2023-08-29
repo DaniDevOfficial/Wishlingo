@@ -13,7 +13,7 @@
   left: 0;
   width: 100%;
   z-index: 1;
-  animation: fadeInUp 2s 0s forwards;
+  animation: fadeInUpBG 2s 0s forwards;
 }
 
 .background-svg2 {
@@ -24,7 +24,7 @@
   left: 0;
   width: 100%;
   z-index: 2;
-  animation: fadeInUp 4s 0s forwards;
+  animation: fadeInUpBG 4s 0s forwards;
 }
 
 .contentwrapper {
@@ -33,10 +33,9 @@
 
 }
   
-  @keyframes fadeInUp {
+  @keyframes fadeInUpBG {
     from {
-      opacity: 0;
-      transform: translateY(10%);
+      transform: translateY(20%);
     }
     to {
       opacity: 1;
