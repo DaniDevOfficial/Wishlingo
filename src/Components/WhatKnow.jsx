@@ -23,7 +23,7 @@ export default function WhatKnow() {
         <div className="grid-container" id="KnownLangGrid">
           {Object.entries(langs).map(([key, value], index) => {
             return (
-              <Link className="flag-link" key={index} to={`/${value}`}>
+              <Link className="flag-link" key={index} to={`${value}`}>
                 <img className="FlagImage" src={flagImages[key]} alt={key} onClick={() => setSpeaking(value)} />
               </Link>
             );

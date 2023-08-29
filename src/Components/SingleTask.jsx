@@ -7,9 +7,9 @@ export function SingleTask() {
   const currentPath = location.pathname;
   const pathSegments = currentPath.split('/').filter(segment => segment !== "");
 
-  const knownLang = pathSegments[0];
-  const learnLang = pathSegments[1];
-  const topic = decodeURIComponent(pathSegments[2]);
+  const knownLang = pathSegments[1];
+  const learnLang = pathSegments[2];
+  const topic = decodeURIComponent(pathSegments[3]);
 
 
   let noTasksAvailableForThisParamText = "No tasks found for the specified parameters.";

@@ -8,9 +8,10 @@ export function Alltopics() {
     const location = useLocation();
     const currentPath = location.pathname;
     const pathSegments = currentPath.split('/').filter(segment => segment !== "");
-    const knownLang = pathSegments[0];
-    const learnLang = pathSegments[1];
-
+    const knownLang = pathSegments[1];
+    const learnLang = pathSegments[2];
+    console.log(knownLang)
+    console.log(learnLang)
     let Title
     if(knownLang === "de" && learnLang === "fr"){
         Title = "Du willst also Französisch lernen"

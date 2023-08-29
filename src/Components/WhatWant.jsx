@@ -9,7 +9,7 @@ export default function WhatWant() {
   const location = useLocation();
   const currentPath = location.pathname;
   const pathSegments = currentPath.split('/').filter(segment => segment !== "");
-  const knownLang = pathSegments[0];
+  const knownLang = pathSegments[1];
 
 let WhichLangLearnText = "Which language do you want to learn"
 
