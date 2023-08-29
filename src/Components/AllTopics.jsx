@@ -13,7 +13,7 @@ export function Alltopics() {
 
     let Title
     if(knownLang === "de" && learnLang === "fr"){
-        Title = "Du wilst also Französisch lernen"
+        Title = "Du willst also Französisch lernen"
     } else if (knownLang === "de" && learnLang === "en"){
         Title = "Du wilst also English lernen"
     } else if (knownLang === "en" && learnLang === "de"){

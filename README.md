@@ -3,7 +3,7 @@
     <p>A simple software to learn new languages by completing sentences.</p>
 </div>
 <div align="center">
-    <img src="https://firebasestorage.googleapis.com/v0/b/wishlingode.appspot.com/o/Logo%2FLogo.png?alt=media&token=5fdc4e7f-625d-4d60-b740-212d128046a2" alt="Description of the Image" style="width: 300px; border-radius: 10px;">
+    <img src="https://firebasestorage.googleapis.com/v0/b/wishlingode.appspot.com/o/Logo%2FWishlingo.png?alt=media&token=e0e982dc-839c-4951-80fb-75352ef85fad" alt="Description of the Image" style="width: 300px; border-radius: 10px;">
 
 </div>
 
