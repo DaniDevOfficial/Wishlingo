@@ -22,6 +22,7 @@
 .SingleTopicBox {
     border: 1px solid #979797;
     margin: 10px;
+    font-size: 1.5rem;
     border-radius: 10px;
     width: 40vh;
     height: 20vh;
@@ -34,7 +35,7 @@
   .Title {
     margin-bottom: 30px;
     margin-top: 15px;
-    font-size: 24px;
+    font-size: 30px;
     color: #1b1b69;
     font-weight: bold;
     font-family: Arial, sans-serif;
@@ -60,23 +61,6 @@
     }
   }
   
-  @media (max-width: 768px) {
-    .SingleTopicBox {
-      font-size: 14px; 
-    }
-  }
-  
-  @media (min-width: 769px) {
-    .SingleTopicBox {
-      font-size: 25px;
-    }
-  }
-
-  @media (min-width: 1800px) {
-    .SingleTopicBox {
-      font-size: 30px; 
-    }
-  }
   @media (max-width: 768px) {
     #Topics{
       grid-template-columns: repeat(2, 1fr);

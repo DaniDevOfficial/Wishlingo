@@ -116,7 +116,7 @@ export function SingleTask() {
         <p>{resultsForExerciseText} {topic}</p>
         <div> {youGotText} {amoutOfCorrect} {outOfText} {filteredTaskForTopic.length}  {correctText}</div>
         <div>{stayStrongText}</div>
-        <Link to={`/${knownLang}/${learnLang}`}> {doneText}</Link>
+        <Link to={`/learn/${knownLang}/${learnLang}`}> {doneText}</Link>
       </div>
     ) : (
       <>
