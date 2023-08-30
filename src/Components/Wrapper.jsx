@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { Navbar } from './Navbar';
 import { HomePage } from './HomePage';
 import WhatKnow from './WhatKnow';
 import WhatWant from './WhatWant';
@@ -17,6 +18,7 @@ export function Wrapper() {
 
   return (
     <Router>
+      <Navbar />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/learn" element={<WhatKnow />} />
