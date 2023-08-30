@@ -16,7 +16,7 @@ export function HomePage() {
                     Wishlingo
                 </div>
                 <div id="slogan">
-                    Unlock Languages with US
+                    Unlock Languages with us
                 </div>
                 <Link to={"/learn"}>
                 <button id="startLearningButton">
