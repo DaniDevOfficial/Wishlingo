@@ -1,9 +1,11 @@
-import tasksData from './Tasks/tasks.json';
+import { useDataContext } from './DataContext';
 import { useLocation, Link } from 'react-router-dom';
 import React, { useState } from 'react';
 import '../Styles/AllTopics.css'
 
 export function Alltopics() {
+    const tasksData = useDataContext();
+
     const [singleTask, setSingleTask] = useState("");
     const location = useLocation();
     const currentPath = location.pathname;

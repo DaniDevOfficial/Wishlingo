@@ -27,8 +27,6 @@ export function Wrapper() {
         <Route path="/learn" element={<WhatKnow />} />
         <Route path="/learn/:lang" element={<WhatWant />} />
         <Route path="/learn/:lang/:learn" element={<Alltopics />} />
-
-        
         {topics.map(topic => (
           <Route key={topic} path={`/learn/:lang/:learn/${topic}`} element={<SingleTask />} />
         ))}

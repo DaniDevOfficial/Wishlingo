@@ -1,4 +1,4 @@
-import tasksData from './Tasks/tasks.json';
+import { useDataContext } from './DataContext';
 import { useLocation, Link } from 'react-router-dom';
 import React, { useState, useEffect } from 'react';
 import '../Styles/TaskStyling.css'
@@ -11,7 +11,7 @@ export function SingleTask() {
   const learnLang = pathSegments[2];
   const topic = decodeURIComponent(pathSegments[3]);
 
-
+  const tasksData = useDataContext();
   let noTasksAvailableForThisParamText = "No tasks found for the specified parameters.";
   let rightText = "Correct!";
   let wrongText = "Wrong!";
@@ -43,7 +43,6 @@ export function SingleTask() {
   } else if (knownLang === "fr") {
     noTasksAvailableForThisParamText = "Aucune tâche trouvée pour les paramètres spécifiés.";
     rightText = "Correct !";
-    wrongText = "Faux !";
     theAnswerIsText = "Votre réponse est fausse !! La solution correcte est :";
     checkAnswerText = "Vérifier la réponse";
     nextText = "Suivant";
