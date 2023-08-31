@@ -30,7 +30,6 @@
 .contentwrapper {
   position: relative;
   z-index: 3;
-
 }
   
   @keyframes fadeInUpBG {

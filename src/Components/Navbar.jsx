@@ -2,18 +2,17 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { onAuthStateChanged } from 'firebase/auth';
-import { auth } from '../firebase'; // Adjust the import path according to your project structure
+import { auth } from '../firebase'; 
 import '../Styles/Navbar.css';
 
 export function Navbar() {
-    const [user, setUser] = useState(null); // User object or null
+    const [user, setUser] = useState(null); 
 
     useEffect(() => {
         const unsubscribe = onAuthStateChanged(auth, (user) => {
-            setUser(user); // Set user object if logged in, or null if not
+            setUser(user); 
         });
 
-        // Cleanup the listener when the component unmounts
         return () => unsubscribe();
     }, []);
 

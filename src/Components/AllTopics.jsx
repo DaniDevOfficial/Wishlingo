@@ -1,6 +1,7 @@
 import { useDataContext } from './DataContext';
 import { useLocation, Link } from 'react-router-dom';
 import React, { useState } from 'react';
+import { AiOutlinePlus } from 'react-icons/ai';
 import '../Styles/AllTopics.css'
 
 export function Alltopics() {
@@ -15,18 +16,19 @@ export function Alltopics() {
     console.log(knownLang)
     console.log(learnLang)
     let Title
-    if(knownLang === "de" && learnLang === "fr"){
+    if (knownLang === "de" && learnLang === "fr") {
         Title = "Du willst also Französisch lernen"
-    } else if (knownLang === "de" && learnLang === "en"){
+    } else if (knownLang === "de" && learnLang === "en") {
         Title = "Du willst also English lernen"
-    } else if (knownLang === "en" && learnLang === "de"){
+    } else if (knownLang === "en" && learnLang === "de") {
         Title = "So you want to learn German"
-    } else if (knownLang === "en" && learnLang === "fr"){
+    } else if (knownLang === "en" && learnLang === "fr") {
         Title = "So you want to learn French"
-    } else if (knownLang === "fr" && learnLang === "en"){
+    } else if (knownLang === "fr" && learnLang === "en") {
         Title = "Donc tu veux apprendre l'anglais"
-    } else if (knownLang === "fr" && learnLang === "en"){
-        Title ="Alors tu veux apprendre l'allemand"}
+    } else if (knownLang === "fr" && learnLang === "en") {
+        Title = "Alors tu veux apprendre l'allemand"
+    }
 
     const filteredTasks = tasksData.filter(task => task.knowLang === knownLang && task.learnLang === learnLang);
 
@@ -40,18 +42,24 @@ export function Alltopics() {
     return (
         <>
             <div className="background-containerTopics">
-            <div className="flex-container">
+                <div className="flex-container">
 
-                <div className='Title'>{Title}</div>
-                <div className="grid-container-topics" id="Topics">
-
-                    {uniqueTopicsArray.map((topic, index) => (
-                        <Link key={index} to={`${topic}`} className="link-style">
-                            <div className="SingleTopicBox">
-                                <div className="SingleTopic linear-wipe" onClick={() => setSingleTask(topic)} key={index}>{topic}</div>
+                    <div className='Title'>{Title}</div>
+                    <div className="grid-container-topics" id="Topics">
+                        {uniqueTopicsArray.map((topic, index) => (
+                            <Link key={index} to={`${topic}`} className="link-style">
+                                <div className="SingleTopicBox">
+                                    <div className="SingleTopic linear-wipe" onClick={() => setSingleTask(topic)} key={index}>{topic}</div>
+                                </div>
+                            </Link>
+                        ))}
+                        <Link to={'NewTask'}className="link-style">
+                        <div className="SingleTopicBox" id="addnew">
+                            <div className="addNewTaskButton plus-icon">
+                                +
                             </div>
+                        </div>
                         </Link>
-                    ))}
                     </div>
                 </div>
             </div>

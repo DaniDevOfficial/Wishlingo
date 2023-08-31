@@ -1,0 +1,59 @@
+.background-NewTask{
+    background-color: #d2ebfe;
+    border-radius: 15px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10vh;
+    max-height: 100vh;
+    overflow-y: auto;
+    padding: 30px;
+    gap: 10px;
+    animation: fadeInAnimation 1s ease forwards;
+}
+.NewTask-Form{
+    display: flex;
+    background-color: #d2ebfe;
+    border-radius: 15px;
+    margin-left: 10%;
+    margin-right: 10%;
+    max-height: 100vh;
+    overflow-y: auto;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    gap: 10px;
+    animation: fadeInAnimation 1s ease forwards;
+    overflow-x: hidden;
+}
+.input-field-NewTask {
+    width: 40%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  .CreateNewTask{
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  .CreateNewTask:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+
+  @media (max-width: 900px) {
+
+    .input-field-NewTask {
+        width: 90%;
+      }
+
+  }
+  

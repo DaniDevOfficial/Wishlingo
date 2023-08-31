@@ -132,6 +132,7 @@ export function SingleTask() {
           <div className="background-singleTask" id='withanimation'>
             <div className="progressbar" style={{ width: `${progressPercentage}%` }}></div>
             <h2>{topic}</h2>
+            <br />
             <p>
               <div className="task-content">
                 <p className='task'>

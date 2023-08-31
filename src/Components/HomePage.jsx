@@ -3,12 +3,15 @@ import Logo from "../Images/capyblapy.png"
 import { Link } from 'react-router-dom'
 export function HomePage() {
 
-
-
+let funny = 0
+function themesong () {
+    funny ++
+    
+}
     return (
         <>
             <div className="background-homepage">
-                <div id="mainLogo">
+                <div id="mainLogo" onClick={themesong()}>
                     <img src={Logo} alt="Capyblapy" />
                 </div>
                 <div id="mainTitle">
