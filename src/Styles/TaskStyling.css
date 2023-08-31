@@ -22,3 +22,134 @@
 	color: dodgerblue;
   }
   
+  .background-singleTask {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+    background-color: #d2ebfe;
+    border-radius: 15px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10vh;
+    max-height: 100vh;
+    overflow-y: auto;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    gap: 10px;
+    animation: fadeInAnimation 1s ease forwards;
+
+}
+#withanimation{
+	
+}
+.progressbar {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 1vh; 
+	background-color: #007bff; 
+	transition: width 0.3s ease-in-out; 
+	width: 0; 
+  }
+
+  .button {
+	background-color: #007bff;
+	color: white;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 16px;
+	margin-top: 10px;
+	transition: background-color 0.3s ease;
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+  }
+  
+  .button:hover {
+	background-color: #0056b3;
+  }
+  
+  .task{
+	margin-bottom: -10px;
+  }
+  .task-content {
+	margin-top: -100px;
+	font-size: 1.5rem; 
+  }
+  .translation {
+	font-size: 1.2rem;
+  }
+  .feedback-message {
+	font-size: 1.2rem;
+	font-weight: bold;
+	margin-top: 10px;
+  }
+  
+  .right-answer {
+	color: green;
+  }
+  
+  .wrong-answer {
+	color: red;
+  }
+
+  .hint-button {
+	background-color: #007bff;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	padding: 5px 10px;
+	margin-left: 10px;
+	cursor: pointer;
+	font-size: 14px;
+  }
+  
+  .hint-button:hover {
+	background-color: #0056b3;
+  }
+  
+  .hint-content {
+	background-color: white;
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+	border-radius: 5px;
+	padding: 10px;
+	font-size: 14px;
+	margin-left: 10px;
+  }
+  .results-summary {
+	margin-top: 20px;
+	text-align: center;
+  }
+  
+  .done-link {
+	display: inline-block;
+	margin-top: 20px;
+	padding: 10px 20px;
+	background-color: #007bff;
+	color: white;
+	border-radius: 5px;
+	text-decoration: none;
+	font-size: 14px;
+	transition: background-color 0.3s ease;
+  }
+  
+  .done-link:hover {
+	background-color: #0056b3;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+	.results-summary {
+	  font-size: 14px;
+	}
+	
+	.done-link {
+	  font-size: 12px;
+	}
+  }

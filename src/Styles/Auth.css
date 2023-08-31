@@ -1,0 +1,146 @@
+
+  .SignInForm {
+    
+    display: flex;
+    background-color: #d2ebfe;
+    border-radius: 15px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10vh;
+    max-height: 100vh;
+    overflow-y: auto;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    gap: 10px;
+    animation: fadeInAnimation 1s ease forwards;
+    overflow-x: hidden;
+  }
+  
+  .input-field {
+    width: 40%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  #mainTitle {
+    font-size: 36px;
+    font-weight: bold;
+    color: #2a41a8;
+    margin-bottom: 20px;
+  }
+  
+  #startLearningButton {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  #startLearningButton:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+  
+  .error-message {
+    color: red;
+    margin-top: 10px;
+  }
+  
+.success-message {
+    color: green;
+    font-size: 14px;
+    margin-top: 10px;
+}
+  .button-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.create-account-link {
+    margin: 0;
+    font-size: 14px;
+    color: #2a41a8;
+}
+
+.create-account-link a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.create-account-link a:hover {
+    color: #0056b3;
+}
+
+.startLearningButton {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    text-decoration: none; 
+    display: inline-block; 
+    margin-top: 10px; 
+}
+
+.startLearningButton:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+.logoutButton {
+    background-color: #ff5858;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.logoutButton:hover {
+    background-color: #ff3333;
+    transform: scale(1.05);
+}
+.loggedInContent {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    gap: 20px; 
+}
+.loggedinText {
+    font-size: 18px;
+    color: #2a41a8; 
+    margin-bottom: 10px;
+}
+
+.SignInForm .demo-credentials {
+    font-size: 14px;
+    color: #888; 
+    margin-top: 15px;
+    text-align: center;
+}
+  @media (max-width: 700px) {
+    .SignInForm {
+      padding: 15px;
+    }
+    .input-field {
+        width: 90%;
+      }
+    #mainTitle {
+      font-size: 28px;
+    }
+  }
+  

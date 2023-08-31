@@ -15,14 +15,14 @@ export function SingleTask() {
   let noTasksAvailableForThisParamText = "No tasks found for the specified parameters.";
   let rightText = "Correct!";
   let wrongText = "Wrong!";
-  let theAnswerIsText = "The correct answer is: ";
+  let theAnswerIsText = "Your answer is Wrong!! The correct answer is: ";
   let checkAnswerText = "Check Answer";
   let nextText = "Next";
   let resultsForExerciseText = "Results for Exercise: ";
   let youGotText = "You got ";
   let outOfText = "Out of  "
   let stayStrongText = "Stay Strong and Learn even More!!";
-  let doneText = "Done";
+  let doneText = "Chose another Topic";
   let correctText = "Questions Correct";
 
 
@@ -31,7 +31,7 @@ export function SingleTask() {
     noTasksAvailableForThisParamText = "Keine Aufgaben für die angegebenen Parameter gefunden.";
     rightText = "Richtig!";
     wrongText = "Falsch!";
-    theAnswerIsText = "Die richtige Lösung ist: ";
+    theAnswerIsText = "Deine Antwort ist falsch!! Die richtige Lösung ist: ";
     checkAnswerText = "Antwort überprüfen";
     nextText = "Weiter";
     resultsForExerciseText = "Ergebnisse für Übung: ";
@@ -39,12 +39,12 @@ export function SingleTask() {
     outOfText = "von ";
     correctText = " Fragen richtig";
     stayStrongText = "Bleib stark und lerne noch mehr!!";
-    doneText = "Weiter";
+    doneText = "Anderes Thema auswählen";
   } else if (knownLang === "fr") {
     noTasksAvailableForThisParamText = "Aucune tâche trouvée pour les paramètres spécifiés.";
     rightText = "Correct !";
     wrongText = "Faux !";
-    theAnswerIsText = "La solution correcte est :";
+    theAnswerIsText = "Votre réponse est fausse !! La solution correcte est :";
     checkAnswerText = "Vérifier la réponse";
     nextText = "Suivant";
     resultsForExerciseText = "Résultats de l'exercice :";
@@ -61,6 +61,7 @@ export function SingleTask() {
   const [isCorrect, setIsCorrect] = useState();
   const [amoutOfCorrect, setAmountOfCorrect] = useState(0)
   const [noMoreTasksLeft, setNoMoreTasksLeft] = useState(false)
+  const [isHintVisible, setIsHintVisible] = useState(false);
 
 
   const filteredTaskForTopic = tasksData.filter(
@@ -72,8 +73,9 @@ export function SingleTask() {
   const sentencePart2 = task.sentencePart2;
   const translatedSentence = task.translation;
   const missingWord = task.missingWord;
+  const hint = task.hints;
   const missingWordLength = missingWord.length
-  console.log(missingWordLength)
+  const progressPercentage = (currentTaskIndex / (filteredTaskForTopic.length)) * 100;
 
 
   const goToNextTask = () => {
@@ -81,6 +83,7 @@ export function SingleTask() {
       setCurrentTaskIndex(currentTaskIndex + 1);
       setUserInput("");
       setIsCorrect();
+      setIsHintVisible(false);
     } else if (currentTaskIndex === filteredTaskForTopic.length - 1) {
       return (
         setNoMoreTasksLeft(true)
@@ -89,6 +92,9 @@ export function SingleTask() {
     }
   };
 
+  const toggleHint = () => {
+    setIsHintVisible(!isHintVisible);
+  };
 
   if (!task) {
     return <p>{noTasksAvailableForThisParamText}</p>;
@@ -111,39 +117,56 @@ export function SingleTask() {
   };
 
   return (
-    <div>    {noMoreTasksLeft ? (
-      <div>
-        <p>{resultsForExerciseText} {topic}</p>
-        <div> {youGotText} {amoutOfCorrect} {outOfText} {filteredTaskForTopic.length}  {correctText}</div>
-        <div>{stayStrongText}</div>
-        <Link to={`/learn/${knownLang}/${learnLang}`}> {doneText}</Link>
-      </div>
-    ) : (
-      <>
-        <p>
-          {sentencePart1}
-          <input
-            type="text"
-            value={userInput}
-            maxLength={missingWordLength}
-            id="answerInput"
-            onChange={handleInputChange}
-            style={{ "--missingwordLength": missingWordLength }}
-          />
-          {sentencePart2}
-        </p>
-        
-        <p>{translatedSentence.replace(missingWord, "________")}</p>
-        <button onClick={checkAnswer}>{checkAnswerText}</button>
-        {isCorrect ? <p>{rightText}</p> : <p>{wrongText}</p>}
-        <p>{theAnswerIsText} {missingWord}</p>
-        {amoutOfCorrect}
-        <button onClick={goToNextTask}>{nextText}</button>
-        {currentTaskIndex}
-        {filteredTaskForTopic.length - 1}
-      </>
-    )}
-
+    <div>
+      {noMoreTasksLeft ? (
+        <div className="background-singleTask">
+          <div className="progressbar" style={{ width: `100%` }}></div>
+          <h2>{resultsForExerciseText} {topic}</h2>
+          <div className="results-summary">
+            <p>{youGotText} {amoutOfCorrect} {outOfText} {filteredTaskForTopic.length} {correctText}</p>
+            <p>{stayStrongText}</p>
+          </div>
+          <Link to={`/learn/${knownLang}/${learnLang}`} className="done-link">{doneText}</Link>
+        </div>
+      ) : (
+        <>
+          <div className="background-singleTask" id='withanimation'>
+            <div className="progressbar" style={{ width: `${progressPercentage}%` }}></div>
+            <h2>{topic}</h2>
+            <p>
+              <div className="task-content">
+                <p className='task'>
+                  {sentencePart1}
+                  <input
+                    type="text"
+                    value={userInput}
+                    maxLength={missingWordLength}
+                    id="answerInput"
+                    onChange={handleInputChange}
+                    style={{ "--missingwordLength": missingWordLength }}
+                  />
+                  {sentencePart2}
+                </p>
+                <div className="translation-hint-container">
+                  <p className="translation">{translatedSentence}</p>
+                  {isHintVisible ? (
+                    <p className="hint-content">{hint}</p>
+                  ) : (
+                    <button className="hint-button" onClick={toggleHint}>Hint</button>
+                  )}
+                </div>
+              </div>
+              {isCorrect === undefined ? (
+                <button className="button" onClick={checkAnswer}>{checkAnswerText}</button>
+              ) : (
+                <button className="button" onClick={goToNextTask}>{nextText}</button>
+              )}
+            </p>
+            {isCorrect === true ? <p className="feedback-message right-answer">{rightText}</p> : null}
+            {isCorrect === false ? <p className="feedback-message wrong-answer">{theAnswerIsText} {missingWord}</p> : null}
+          </div>
+        </>
+      )}
     </div>
   );
 }
