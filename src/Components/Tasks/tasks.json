@@ -451,7 +451,7 @@
     "id": 33,
     "knowLang": "de",
     "learnLang": "en",
-    "sentencePart1": "One of my favorite things to do is",
+    "sentencePart1": "One of my favorite things to ",
     "sentencePart2": "in the great outdoors.",
     "translation": "Eines meiner Lieblingsbeschäftigungen ist es, in der freien Natur zu wandern.",
     "missingWord": "hike",
@@ -635,8 +635,8 @@
     "learnLang": "en",
     "sentencePart1": "I find solace in",
     "sentencePart2": "to escape the city noise.",
-    "translation": "Ich finde Trost darin, in die Berge zu fahren, um dem Stadtlärm zu entkommen.",
-    "missingWord": "heading to the mountains",
+    "translation": "Ich finde Trost in den Berge, um dem Stadtlärm zu entkommen.",
+    "missingWord": " the mountains",
     "hints": [
       "Eine Reise in die Höhe, um Ruhe zu finden."
     ],
@@ -685,7 +685,8 @@
     "topic": "Natur",
     "positionInTopic": 9
   },
-  {
+  { 
+
     "id": 50,
     "knowLang": "de",
     "learnLang": "en",

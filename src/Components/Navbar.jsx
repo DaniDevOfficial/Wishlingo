@@ -9,7 +9,6 @@ export function Navbar() {
     const [user, setUser] = useState(null); // User object or null
 
     useEffect(() => {
-        // Check if user is logged in
         const unsubscribe = onAuthStateChanged(auth, (user) => {
             setUser(user); // Set user object if logged in, or null if not
         });
