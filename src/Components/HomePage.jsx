@@ -1,18 +1,19 @@
 import '../Styles/HomePage.css'
 import Logo from "../Images/capyblapy.png"
 import { Link } from 'react-router-dom'
+import { useState } from 'react';
+import themeSong from './Sound/themeSong.mp3';
 export function HomePage() {
-
-let funny = 0
-function themesong () {
-    funny ++
-    
-}
+    const [counter, setCounter] = useState(0);
+    const [audio] = useState(new Audio(themeSong));
+        if(counter === 50){
+            audio.play();
+        }
     return (
         <>
             <div className="background-homepage">
-                <div id="mainLogo" onClick={themesong()}>
-                    <img src={Logo} alt="Capyblapy" />
+                <div id="mainLogo">
+                    <img src={Logo} alt="Capyblapy" onClick={() => setCounter(counter + 1)}/>
                 </div>
                 <div id="mainTitle">
 
