@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { onAuthStateChanged } from 'firebase/auth';
 import { auth } from '../firebase'; 
 import '../Styles/Navbar.css';
-
+import Logo from '../Images/capyblapy.png'
 export function Navbar() {
     const [user, setUser] = useState(null); 
 
@@ -19,7 +19,7 @@ export function Navbar() {
     return (
         <nav className="navbar">
             <div className="left-section">
-                <div className="logo">Your Logo</div>
+                <div className=""><Link to="/"><img src={Logo} alt="" className='logo'/> </Link></div>
                 <div className="home-link"><Link to="/">Home</Link></div>
             </div>
             <ul className="nav-links">

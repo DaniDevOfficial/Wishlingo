@@ -20,16 +20,6 @@ function FetchData() {
 
   return (
     <div>
-      <h1>Sentences and Translations</h1>
-      <ul>
-        {data.map((item, index) => (
-          <li key={index}>
-            <p>Topic: {item.topic}</p>
-            <p>Sentence: {item.sentencePart1} {item.sentencePart2}</p>
-            <p>Translation: {item.translation}</p>
-          </li>
-        ))}
-      </ul>
     </div>
   );
 }
