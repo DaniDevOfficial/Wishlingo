@@ -1,3 +1,4 @@
+import { useDataContext } from './DataContext';
 import React, { useState, useEffect } from 'react';
 import { getDatabase, ref, push, set, get } from 'firebase/database';
 import { getAuth, onAuthStateChanged } from 'firebase/auth';
@@ -5,6 +6,8 @@ import { useLocation } from 'react-router-dom';
 import '../Styles/NewTask.css';
 
 export function NewTask() {
+    const tasksData = useDataContext();
+
     const location = useLocation();
     const currentPath = location.pathname;
     const pathSegments = currentPath.split('/').filter(segment => segment !== "");

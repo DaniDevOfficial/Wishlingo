@@ -18,27 +18,29 @@ export function Alltopics() {
     const [filteredTasks, setFilteredTasks] = useState([]);
 
     const [uniqueTopicsArray, setUniqueTopicsArray] = useState([]);
-    const [isLoading, setIsLoading] = useState(true); // New state for loading indicator
+    const [isLoading, setIsLoading] = useState(true); 
 
     useEffect(() => {
         const auth = getAuth(); 
 
         const unsubscribe = onAuthStateChanged(auth, (user) => { 
             setUser(user);
-            setIsLoading(false); // Mark loading as done when user state is set
+            setIsLoading(false); 
         });
 
         const userUID = user ? user.uid : null; 
 
         const filteredTasks = tasksData.filter(task => 
-            (task.createdBy === userUID) || (!task.createdBy) && 
+            
             (task.knowLang === knownLang && task.learnLang === learnLang)
         );
-
-        setFilteredTasks(filteredTasks);
+        const truefiltered = filteredTasks.filter(task =>
+            (task.createdBy === userUID)  || (!task.createdBy)
+            )
+        setFilteredTasks(truefiltered);
 
         const uniqueTopicsSet = new Set();
-        filteredTasks.forEach(item => {
+        truefiltered.forEach(item => {
             uniqueTopicsSet.add(item.topic);
         });
         

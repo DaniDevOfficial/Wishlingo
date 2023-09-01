@@ -12,6 +12,9 @@ export function SingleTask() {
   const topic = decodeURIComponent(pathSegments[3]);
 
   const tasksData = useDataContext();
+  const filteredTaskForTopic = tasksData.filter(
+    task => task.knowLang === knownLang && task.learnLang === learnLang && task.topic === topic
+  );
   let noTasksAvailableForThisParamText = "No tasks found for the specified parameters.";
   let rightText = "Correct!";
   let wrongText = "Wrong!";
@@ -63,9 +66,6 @@ export function SingleTask() {
   const [isHintVisible, setIsHintVisible] = useState(false);
 
 
-  const filteredTaskForTopic = tasksData.filter(
-    task => task.knowLang === knownLang && task.learnLang === learnLang && task.topic === topic
-  );
 
   const task = filteredTaskForTopic[currentTaskIndex];
   const sentencePart1 = task.sentencePart1;
@@ -129,6 +129,7 @@ export function SingleTask() {
         </div>
       ) : (
         <>
+        wasd
           <div className="background-singleTask" id='withanimation'>
             <div className="progressbar" style={{ width: `${progressPercentage}%` }}></div>
             <h2>{topic}</h2>
