@@ -7,7 +7,7 @@ export function HomePage() {
     const [counter, setCounter] = useState(0);
     const [audio] = useState(new Audio(themeSong));
         if(counter === 50){
-            audio.play();
+            audio.play(); // is kinda loud. Pay attention
         }
     return (
         <>

@@ -74,8 +74,12 @@ export function SignIn() {
                             className="input-field"
                         />
                         <button type="submit" id="startLearningButton" disabled={isLoading}>
+                            
                             {isLoading ? "Logging In..." : "Log In"}
                         </button>
+                        <p className="create-account-link">
+                            No account? <Link to="/signup">Sign up</Link>
+                        </p>
                         {error && <p className="error-message">{error}</p>}
                         <p className="demo-credentials">
                         Demo Account: demo@demo.com <br />

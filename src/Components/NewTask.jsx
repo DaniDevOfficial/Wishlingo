@@ -73,11 +73,8 @@ export function NewTask() {
                     task.topic === taskData.topic
             );
 
-            const lastPosition = sameCombinationTasks.reduce((maxPosition, task) => {
-                return task.positionInTopic > maxPosition ? task.positionInTopic : maxPosition;
-            }, 0);
 
-            const nextPosition = lastPosition + 1;
+            const nextPosition = sameCombinationTasks.length + 1; 
 
 
             const database = getDatabase();
@@ -164,7 +161,9 @@ export function NewTask() {
                 />
 
                 <input className="CreateNewTask" type="submit" value="Create" />
+
             </form>
+            
         </div>
     );
 }

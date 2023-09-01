@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { auth } from '../../firebase';
 import '../../Styles/Auth.css';
+import { Link } from "react-router-dom";
 
 export function SignUp() {
 
@@ -39,6 +40,7 @@ export function SignUp() {
                     className="input-field"
                 />
                 <button type="submit" id="startLearningButton">Sign up</button>
+
             </form>
         </div>
     );
