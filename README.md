@@ -58,7 +58,25 @@ npm install react-icons
 
 4. Create Firebase DB
 
-Due to the fact that you cant use my firebase realtime DB because i would have to give out my Tokens, you need to create your own one and just simply connect it with the app
+Due to the fact that you cant use my firebase realtime DB because i would have to give out my Tokens, you need to create your own one and just simply connect it with the app. It should look like this: 
+
+import { initializeApp } from "firebase/app";
+import { getAuth } from 'firebase/auth'
+
+const firebaseConfig = {
+  apiKey: "YOUR_TEMP_API_KEY",
+  authDomain: "YOUR_TEMP_AUTH_DOMAIN",
+  databaseURL: "YOUR_TEMP_DATABASE_URL",
+  projectId: "YOUR_TEMP_PROJECT_ID",
+  storageBucket: "YOUR_TEMP_STORAGE_BUCKET",
+  messagingSenderId: "YOUR_TEMP_MESSAGING_SENDER_ID",
+  appId: "YOUR_TEMP_APP_ID"
+};
+
+const app = initializeApp(firebaseConfig);
+
+export const auth = getAuth(app);
+
 
 5. run the app
 
