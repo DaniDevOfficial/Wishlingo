@@ -48,9 +48,19 @@ npm install
 npm install react-router-dom
 ```
 
+```
+npm install firebase 
+```
 
+```
+npm install react-icons 
+```
 
-4. run the app
+4. Create Firebase DB
+
+Due to the fact that you cant use my firebase realtime DB because i would have to give out my Tokens, you need to create your own one and just simply connect it with the app
+
+5. run the app
 
 ```
 npm run start
