@@ -129,7 +129,6 @@ export function SingleTask() {
         </div>
       ) : (
         <>
-        wasd
           <div className="background-singleTask" id='withanimation'>
             <div className="progressbar" style={{ width: `${progressPercentage}%` }}></div>
             <h2>{topic}</h2>

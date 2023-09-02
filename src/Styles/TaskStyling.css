@@ -148,7 +148,9 @@
 	.results-summary {
 	  font-size: 14px;
 	}
-	
+	.hint-button{
+		margin: 10px;
+	}
 	.done-link {
 	  font-size: 12px;
 	}

@@ -5,8 +5,7 @@
   margin-right: 10%;
   margin-top: 10vh;
   padding: 10px;
-  max-height: 100vh;
-  overflow-y: auto;
+  overflow: hidden;
 }
 
 #Topics {

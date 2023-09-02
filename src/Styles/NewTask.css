@@ -4,11 +4,11 @@
     margin-left: 10%;
     margin-right: 10%;
     margin-top: 10vh;
-    max-height: 100vh;
-    overflow-y: auto;
     padding: 30px;
     gap: 10px;
+    padding-bottom: 10vh;
     animation: fadeInAnimation 1s ease forwards;
+    overflow: hidden;
 }
 .NewTask-Form{
     display: flex;
@@ -49,10 +49,12 @@
     transform: scale(1.05);
   }
 
+
+
   @media (max-width: 900px) {
 
     .input-field-NewTask {
-        width: 90%;
+        width: 110%;
       }
 
   }

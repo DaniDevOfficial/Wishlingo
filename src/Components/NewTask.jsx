@@ -6,7 +6,6 @@ import { useLocation } from 'react-router-dom';
 import '../Styles/NewTask.css';
 
 export function NewTask() {
-    const tasksData = useDataContext();
 
     const location = useLocation();
     const currentPath = location.pathname;
@@ -38,7 +37,7 @@ export function NewTask() {
         });
 
         const database = getDatabase();
-        const tasksRef = ref(database, 'your_tasks_path'); 
+        const tasksRef = ref(database); 
         get(tasksRef)
             .then((snapshot) => {
                 if (snapshot.exists()) {
@@ -75,7 +74,6 @@ export function NewTask() {
 
 
             const nextPosition = sameCombinationTasks.length + 1; 
-
 
             const database = getDatabase();
             const tasksRef = ref(database); 
@@ -118,6 +116,7 @@ export function NewTask() {
                     placeholder="Sentence Part 1"
                     value={taskData.sentencePart1}
                     onChange={handleInputChange}
+                    required={true}
                 />
                 <input
                     className="input-field-NewTask"
@@ -126,6 +125,7 @@ export function NewTask() {
                     placeholder="Sentence Part 2"
                     value={taskData.sentencePart2}
                     onChange={handleInputChange}
+                    required={true}
                 />
                 <input
                     className="input-field-NewTask"
@@ -134,6 +134,7 @@ export function NewTask() {
                     placeholder="Translation"
                     value={taskData.translation}
                     onChange={handleInputChange}
+                    required={true}
                 />
                 <input
                     className="input-field-NewTask"
@@ -142,6 +143,7 @@ export function NewTask() {
                     placeholder="Missing Word"
                     value={taskData.missingWord}
                     onChange={handleInputChange}
+                    required={true}
                 />
                 <input
                     className="input-field-NewTask"
@@ -150,6 +152,7 @@ export function NewTask() {
                     placeholder="Hints"
                     value={taskData.hints}
                     onChange={handleInputChange}
+                    required={true}
                 />
                 <input
                     className="input-field-NewTask"
@@ -158,6 +161,7 @@ export function NewTask() {
                     placeholder="Topic"
                     value={taskData.topic}
                     onChange={handleInputChange}
+                    required={true}
                 />
 
                 <input className="CreateNewTask" type="submit" value="Create" />
