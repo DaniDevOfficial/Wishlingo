@@ -56,6 +56,10 @@ npm install firebase
 npm install react-icons 
 ```
 
+```
+npm install react-toastify
+```
+
 4. Create Firebase DB
 
 Due to the fact that you cant use my firebase realtime DB because i would have to give out my Tokens, you need to create your own one and just simply connect it with the app. It should look like this: 

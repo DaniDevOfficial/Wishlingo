@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { signInWithEmailAndPassword, signOut, onAuthStateChanged } from "firebase/auth";
 import { auth } from '../../firebase';
+import { toast } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
 import '../../Styles/Auth.css';
 
 export function SignIn() {
@@ -25,11 +27,11 @@ export function SignIn() {
         
         signInWithEmailAndPassword(auth, email, password)
             .then((userCredentials) => {
-                console.log("User signed in:", userCredentials.user);
+                toast.success("You got logged in!!");
                 setIsLoading(false);
+                setError("")
             })
             .catch((error) => {
-                console.error("Sign-in error:", error);
                 setError("Invalid email or password. Please try again.");
                 setIsLoading(false);
             });
@@ -38,10 +40,10 @@ export function SignIn() {
     function handleSignOut() {
         signOut(auth)
             .then(() => {
-                console.log("User signed out.");
+                toast.success("You signed out :(");
             })
             .catch((error) => {
-                console.error("Sign-out error:", error);
+                toast.error("Sign-out error:", error);
             });
     }
 

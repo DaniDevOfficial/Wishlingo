@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { auth } from '../../firebase';
+import { toast } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
 import '../../Styles/Auth.css';
-import { Link } from "react-router-dom";
 
 export function SignUp() {
 
@@ -13,9 +14,9 @@ export function SignUp() {
         e.preventDefault();
         createUserWithEmailAndPassword(auth, email, password)
             .then((userCredentials) => {
-                console.log(userCredentials);
+                toast.success("Your Account Got Created!! Start Learning");
             }).catch((error) => {
-                console.log(error);
+                toast.error("Something went wrong" + error);
             });
     }
 

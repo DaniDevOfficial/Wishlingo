@@ -3,7 +3,10 @@ import React, { useState, useEffect } from 'react';
 import { getDatabase, ref, push, set, get } from 'firebase/database';
 import { getAuth, onAuthStateChanged } from 'firebase/auth';
 import { useLocation, Link } from 'react-router-dom';
+import {  toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import '../Styles/NewTask.css';
+
 
 export function NewTask() {
 
@@ -87,7 +90,7 @@ export function NewTask() {
                 createdBy: user.uid,
             })
                 .then(() => {
-                    console.log('Task uploaded successfully!');
+                    toast.success('Task uploaded successfully! Start Learning');
                     setTaskData({
                         knowLang: knownLang,
                         learnLang: learnLang,
@@ -102,7 +105,7 @@ export function NewTask() {
                     });
                 })
                 .catch((error) => {
-                    console.error('Error uploading task:', error);
+                    toast.error('Error uploading task');
                 });
         }
     };
@@ -195,6 +198,7 @@ export function NewTask() {
                 />
 
                 <input className="CreateNewTask" type="submit" value="Create" />
+
             </form>
 
 
