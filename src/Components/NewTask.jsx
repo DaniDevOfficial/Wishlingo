@@ -2,7 +2,7 @@ import { useDataContext } from './DataContext';
 import React, { useState, useEffect } from 'react';
 import { getDatabase, ref, push, set, get } from 'firebase/database';
 import { getAuth, onAuthStateChanged } from 'firebase/auth';
-import { useLocation } from 'react-router-dom';
+import { useLocation, Link } from 'react-router-dom';
 import '../Styles/NewTask.css';
 
 export function NewTask() {
@@ -24,20 +24,22 @@ export function NewTask() {
         hints: '',
         topic: '',
         positionInTopic: '',
-        createdBy: '', 
+        createdBy: '',
     });
 
-    const [user, setUser] = useState(null); 
-    const [tasksArray, setTasksArray] = useState([]); 
+    const [user, setUser] = useState(null);
+    const [tasksArray, setTasksArray] = useState([]);
+    const [loggedIn, setLoggedIn] = useState(false);
 
     useEffect(() => {
         const auth = getAuth();
         const unsubscribe = onAuthStateChanged(auth, (user) => {
-            setUser(user); 
+            setUser(user);
+            setLoggedIn(!!user);
         });
 
         const database = getDatabase();
-        const tasksRef = ref(database); 
+        const tasksRef = ref(database);
         get(tasksRef)
             .then((snapshot) => {
                 if (snapshot.exists()) {
@@ -73,10 +75,10 @@ export function NewTask() {
             );
 
 
-            const nextPosition = sameCombinationTasks.length + 1; 
+            const nextPosition = sameCombinationTasks.length + 1;
 
             const database = getDatabase();
-            const tasksRef = ref(database); 
+            const tasksRef = ref(database);
             const newTaskRef = push(tasksRef);
 
             set(newTaskRef, {
@@ -96,7 +98,7 @@ export function NewTask() {
                         hints: '',
                         topic: '',
                         positionInTopic: '',
-                        createdBy: '', 
+                        createdBy: '',
                     });
                 })
                 .catch((error) => {
@@ -104,70 +106,95 @@ export function NewTask() {
                 });
         }
     };
+    if (!loggedIn) {
+        return <div className="background-NewTask">
+            <div>You need to be logged in to access this page.</div>
+            <Link to="/signin"><button type="submit" id="startLearningButton" > Login</button> </Link>
+                <p className="create-account-link">
+                    No account? <Link to="/signup">Sign up</Link>
+                </p></div>
+    }
 
     return (
         <div className="background-NewTask">
-            <form className="NewTask-Form" onSubmit={handleSubmit}>
 
+            <form className="NewTask-Form" onSubmit={handleSubmit}>
+                <label htmlFor="sentencePart1">Sentence Part 1:</label>
                 <input
                     className="input-field-NewTask"
                     type="text"
+                    id="sentencePart1"
                     name="sentencePart1"
-                    placeholder="Sentence Part 1"
+                    placeholder="Hello, how"
                     value={taskData.sentencePart1}
                     onChange={handleInputChange}
                     required={true}
                 />
+
+                <label htmlFor="sentencePart2">Sentence Part 2:</label>
                 <input
                     className="input-field-NewTask"
                     type="text"
+                    id="sentencePart2"
                     name="sentencePart2"
-                    placeholder="Sentence Part 2"
+                    placeholder="you?"
                     value={taskData.sentencePart2}
                     onChange={handleInputChange}
                     required={true}
                 />
+
+                <label htmlFor="translation">Translation:</label>
                 <input
                     className="input-field-NewTask"
                     type="text"
+                    id="translation"
                     name="translation"
-                    placeholder="Translation"
+                    placeholder="Hallo, wie geht es dir?"
                     value={taskData.translation}
                     onChange={handleInputChange}
                     required={true}
                 />
+
+                <label htmlFor="missingWord">Missing Word:</label>
                 <input
                     className="input-field-NewTask"
                     type="text"
+                    id="missingWord"
                     name="missingWord"
-                    placeholder="Missing Word"
+                    placeholder="are"
                     value={taskData.missingWord}
                     onChange={handleInputChange}
                     required={true}
                 />
+
+                <label htmlFor="hints">Hints:</label>
                 <input
                     className="input-field-NewTask"
                     type="text"
+                    id="hints"
                     name="hints"
-                    placeholder="Hints"
+                    placeholder="Frag nach dem Zustand einer Person."
                     value={taskData.hints}
                     onChange={handleInputChange}
                     required={true}
                 />
+
+                <label htmlFor="topic">Topic:</label>
                 <input
                     className="input-field-NewTask"
                     type="text"
+                    id="topic"
                     name="topic"
-                    placeholder="Topic"
+                    placeholder="Begrüßungen"
                     value={taskData.topic}
                     onChange={handleInputChange}
                     required={true}
                 />
 
                 <input className="CreateNewTask" type="submit" value="Create" />
-
             </form>
-            
+
+
         </div>
     );
 }
