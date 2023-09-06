@@ -107,12 +107,15 @@ export function NewTask() {
         }
     };
     if (!loggedIn) {
-        return <div className="background-NewTask">
-            <div>You need to be logged in to access this page.</div>
-            <Link to="/signin"><button type="submit" id="startLearningButton" > Login</button> </Link>
-                <p className="create-account-link">
-                    No account? <Link to="/signup">Sign up</Link>
-                </p></div>
+        return <div className='centered background-NewTask'>
+        <div>You need to be logged in to access this page.</div>
+        <Link to="/signin">
+          <button type="submit" id="startLearningButton">Login</button>
+        </Link>
+        <p className="create-account-link">
+          No account? <Link to="/signup">Sign up</Link>
+        </p>
+      </div>
     }
 
     return (

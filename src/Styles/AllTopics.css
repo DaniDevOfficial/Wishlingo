@@ -13,12 +13,16 @@
 }
 
 .grid-container-topics {
-  display: grid;
-  justify-items: center;
-  align-items: center;
-  display: grid;
-  grid-auto-flow: row;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
+
+.grid-item-topic {
+  flex: 0 0 calc(33.33% - 10px); 
+  margin: 5px;
+}
+
 
 .SingleTopicBox {
   border: 1px solid #979797;
