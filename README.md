@@ -17,8 +17,8 @@ You can extend this basic concept by adding more features, such as multiple gaps
 
 ## Example
 
-Original Sentence: "Working at Andeo is a great experience!"
-Translated Sentence: "Bei Andeo zu arbeiten ist eine grossartige ________!"
+Original Sentence: "Working at a company is a great experience!"
+Translated Sentence: "Bei einer Firma zu arbeiten ist eine grossartige ________!"
 User Input: "Erfahrung"
 Feedback: "Correct!"
 
@@ -53,7 +53,7 @@ npm install firebase
 ```
 
 ```
-npm install react-icons 
+npm install @firebase/app
 ```
 
 ```
