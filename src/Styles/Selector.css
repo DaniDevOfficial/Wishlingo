@@ -1,0 +1,125 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); 
+  justify-items: center; 
+  align-items: center; 
+  display: grid;
+  gap: 2% 2%;
+  grid-auto-flow: row;
+}
+#KnownLangGrid{
+  grid-template-columns: repeat(3, 1fr);
+}
+
+#LearnLangGrid{
+  grid-template-columns: repeat(2, 1fr);
+}
+@media (max-width: 768px) {
+  #KnownLangGrid{
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 50px;
+  }
+  
+
+}
+
+@media (max-width: 480px) {
+  #KnownLangGrid{
+    grid-template-columns: repeat(1, 1fr);
+    margin-bottom: 50px;
+  }
+  #LearnLangGrid{
+    grid-template-columns: 1fr ;
+    margin-bottom: 50px;
+  }
+
+}
+.background-container {
+  background-color: #d2ebfe; 
+  border-radius: 15px;  
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 10vh;
+  overflow: hidden;
+
+} 
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  animation: fadeInUpImages 1s 0s forwards;
+
+}
+
+.Question {
+  margin-bottom: 30px;
+  margin-top: 15px;
+  font-size: 24px;
+  color: #1b1b69;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+}
+.flag-link {
+  text-decoration: none;
+  outline: none;
+}
+
+.FlagImage {
+  width: 100%; 
+  max-width: 400px;
+  height: auto;
+  object-fit: cover;
+  border: none;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; 
+  border-radius: 8px;
+  
+}
+
+.FlagImage:hover {
+    transform: scale(1.1); 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+to {
+    opacity: 1;
+    transform: translateY(0);
+}
+}
+
+@keyframes fadeInUpImages {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+to {
+    opacity: 1;
+    transform: translateY(0);
+}
+}
+
+
+
+@media (min-width: 769px) {
+  .Question {
+    font-size: 24px;
+  }
+}
+@media (min-width: 1200px) {
+  .Question {
+    font-size: 30px;
+  }
+}
+@media (min-width: 1800px) {
+  .Question {
+    font-size: 35px; 
+  }
+}
