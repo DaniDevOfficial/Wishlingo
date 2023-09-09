@@ -2,7 +2,7 @@ import { useDataContext } from './DataContext';
 import React, { useState, useEffect } from 'react';
 import { getDatabase, ref, push, set, get } from 'firebase/database';
 import { getAuth, onAuthStateChanged } from 'firebase/auth';
-import { useLocation, Link } from 'react-router-dom';
+import { useLocation, Link, useNavigate } from 'react-router-dom';
 import {  toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import '../Styles/NewTask.css';
@@ -16,6 +16,7 @@ export function NewTask() {
 
     const knownLang = pathSegments[1];
     const learnLang = pathSegments[2];
+    const navigate = useNavigate();
 
     const [taskData, setTaskData] = useState({
         knowLang: knownLang,
@@ -103,6 +104,8 @@ export function NewTask() {
                         positionInTopic: '',
                         createdBy: '',
                     });
+                    navigate(`/learn/${knownLang}/${learnLang}`);
+
                 })
                 .catch((error) => {
                     toast.error('Error uploading task');
