@@ -13,7 +13,6 @@
     align-items: center;
     padding: 30px;
     gap: 10px;
-    animation: fadeInAnimation 1s ease forwards;
     overflow: hidden;
 }
 
@@ -71,3 +70,5 @@
         transform: translateY(0);
     }
 }
+
+

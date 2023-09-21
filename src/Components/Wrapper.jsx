@@ -10,6 +10,9 @@ import { SingleTask } from './SingleTask';
 import { SignIn } from './auth/SignIn';
 import { SignUp } from './auth/SignUp';
 import { NewTask } from './NewTask.jsx';
+import { PrivacyPolicy }  from './PrivacyPolicy';
+
+import '../Styles/funny.css'
 export function Wrapper() {
   
   const topics = useDataContext().map(task => task.topic);
@@ -19,6 +22,7 @@ export function Wrapper() {
       <Navbar />
       <Routes>
         <Route path="/SignIn" element={<SignIn />} />
+        <Route path="/PrivacyPolicy" element={<PrivacyPolicy />} />
         <Route path="/SignUp" element={<SignUp />} />
         <Route path="/" element={<HomePage />} />
         <Route path="/learn" element={<WhatKnow />} />

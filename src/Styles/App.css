@@ -3,6 +3,8 @@
   min-height: 100vh;
   height: 100%;
   position: relative;
+  animation: spin 2s linear infinite;
+
 }
 
 .background-svg1 {

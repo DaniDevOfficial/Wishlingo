@@ -39,6 +39,7 @@ function handleHamburger() {
             <div className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
                 <ul >
                     <Link className="link-style" to="/Learn">  <li>Learn</li></Link>
+                    <Link className="link-style" to="/PrivacyPolicy">  <li>Privacy Policy</li></Link>
                     {user ? (
                         <Link className="link-style" to="/SignIn"><li>Your Account</li></Link>
                     ) : (
